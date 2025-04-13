@@ -490,22 +490,34 @@ button#toggleBtn {
   }
 }
 /* Responsive: stack tout en colonne sur petits écrans */
-@media (max-width: 768px) {
-  form {
-    padding: 15px;
+@media screen and (max-width: 1024px) {
+  #guidebook {
+    grid-template-columns: 1fr; /* Une seule colonne */
   }
 
-  h1 {
+  .right_nav {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_links {
+    grid-template-columns: 1fr !important;
+    padding: 20px;
+  }
+
+  .navigation_links > div:nth-of-type(2) a {
     font-size: 20px;
-    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
   }
 
-  label {
-    margin-left: 0;
-    font-size: 14px;
+  .annexe_illu > div:nth-of-type(2) {
+    font-size: 36px;
   }
 
-  input, select, textarea {
-    font-size: 14px;
+  .title_annexe {
+    font-size: 48px;
+    transform: rotate(0deg);
+    margin: 20px auto;
+    position: static;
   }
 }
