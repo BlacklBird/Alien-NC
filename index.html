@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="guidebook">
+        <!--------------- sommaire de l'annexe ----------------->
+        <div class="left_nav">
+            <!--------------- 
+            pattern à copier coller pour chaque annexe
+            modifier le # et le nom de l'annexe dans le lien <a href="#aliens">Aliens</a> ainsi que la couleur de l'annexe dans le style="--annexe_nc:#C5A778;"
+            ----------------->
+            <ol style="--annexe_nc:#50b97f;">
+                <a href="#thrakyl">Les Thra’Kyl</a>
+                <li class="styleun">Culture et mode de vie</li>
+                <li class="styledeux">Les rites et traditions</li>
+                <li class="styletrois">Organisation de la société</li>
+            </ol>
+            <!-------------------------------->
+            <ol style="--annexe_nc:#525150;">
+                <a href="#nephilim">Les Nephilim</a>
+                <li class="styleun">Culture et mode de vie</li>
+                <li class="styledeux">Les rites et traditions</li>
+                <li class="styletrois">Organisation de la société</li>
+            </ol>
+            <ol style="--annexe_nc:#b8181b;">
+                <a href="#alwas">Les Alwas</a>
+                <li class="styleun">Culture et mode de vie</li>
+                <li class="styledeux">Les rites et traditions</li>
+                <li class="styletrois">Organisation de la société</li>
+            </ol>
+            <ol style="--annexe_nc:#3b9408;">
+                <a href="#zorok">Les Zorok</a>
+                <li class="styleun">Culture et mode de vie</li>
+                <li class="styledeux">Les rites et traditions</li>
+                <li class="styletrois">Organisation de la société</li>
+            </ol>
+            <ol style="--annexe_nc:#66c5d6;">
+              <a href="#iweltek">Les Iweltek</a>
+              <li class="styleun">Culture et mode de vie</li>
+              <li class="styledeux">Les rites et traditions</li>
+              <li class="styletrois">Organisation de la société</li>
+          </ol>
+          <ol style="--annexe_nc:#fde403;">
+            <a href="#xeds">Les Xeds</a>
+            <li class="styleun">Culture et mode de vie</li>
+            <li class="styledeux">Les rites et traditions</li>
+            <li class="styletrois">Organisation de la société</li>
+        </ol>
+        <ol style="--annexe_nc:#583506;">
+          <a href="#usaid">Les Us’aid</a>
+          <li class="styleun">Culture et mode de vie</li>
+          <li class="styledeux">Les rites et traditions</li>
+          <li class="styletrois">Organisation de la société</li>
+      </ol>
+      <ol style="--annexe_nc:#d16d10;">
+        <a href="#bruzas">Les Bruzas</a>
+        <li class="styleun">Culture et mode de vie</li>
+        <li class="styledeux">Les rites et traditions</li>
+        <li class="styletrois">Organisation de la société</li>
+    </ol>
+    <ol style="--annexe_nc:#1e3b9c;">
+      <a href="#zel">L’Empire Zel</a>
+      <li class="styleun">Culture et mode de vie</li>
+      <li class="styledeux">Les rites et traditions</li>
+      <li class="styletrois">Organisation de la société</li>
+  </ol>
+  <ol style="--annexe_nc:#810303;">
+    <a href="#vrun">Le Front de Libération de Vrun</a>
+    <li class="styleun">Culture et mode de vie</li>
+    <li class="styledeux">Les rites et traditions</li>
+    <li class="styletrois">Organisation de la société</li>
+</ol>
+<ol style="--annexe_nc:#6956bd;">
+  <a href="#hedrakans">La Corporation des Hédrakans</a>
+  <li class="styleun">Culture et mode de vie</li>
+  <li class="styledeux">Les rites et traditions</li>
+  <li class="styletrois">Organisation de la société</li>
+</ol>
+<ol style="--annexe_nc:#803b91;">
+  <a href="#shalkari">Les Shal’Kari</a>
+  <li class="styleun">Culture et mode de vie</li>
+  <li class="styledeux">Les rites et traditions</li>
+  <li class="styletrois">Organisation de la société</li>
+</ol>
+<ol style="--annexe_nc:#d370cb;">
+  <a href="#vorzyth">Les Vor’Zyth</a>
+  <li class="styleun">Culture et mode de vie</li>
+  <li class="styledeux">Les rites et traditions</li>
+  <li class="styletrois">Organisation de la société</li>
+</ol>
+<ol style="--annexe_nc:#405975;">
+  <a href="#kaelyriens">Les Kaelyriens</a>
+  <li class="styleun">Culture et mode de vie</li>
+  <li class="styledeux">Les rites et traditions</li>
+  <li class="styletrois">Organisation de la société</li>
+</ol>
+<ol style="--annexe_nc:#02fc62;">
+  <a href="#lithrith">Les Lithr’ith</a>
+  <li class="styleun">Culture et mode de vie</li>
+  <li class="styledeux">Les rites et traditions</li>
+  <li class="styletrois">Organisation de la société</li>
+</ol>
+<ol style="--annexe_nc:#993251;">
+  <a href="#fylaris">Les Fylaris</a>
+  <li class="styleun">Culture et mode de vie</li>
+  <li class="styledeux">Les rites et traditions</li>
+  <li class="styletrois">Organisation de la société</li>
+</ol>
+        </div>
+        <div class="right_nav hidden" id="rightNav">
+            <div class="info_content">
+            <!--------------- 
+            pattern à copier coller pour chaque annexe
+            modifier le # et le nom de l'annexe, le titre et le texte dans le <h2> et <p> ainsi que la couleur de l'annexe dans le style="--annexe_nc:#C5A778;" et l'image de fond dans style="--bg_annexe:url('./ching-yaaaeh-.jpg');"
+            ----------------->
+                <div class="annexe_nc" id="thrakyl" style="--bg_annexe:url('https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/088AHNRZFO7M1408759288485.jpg');--annexe_nc:#50b97f;">
+                    <div class="annexe_illu">
+                        <div></div>
+                        <div>Adaptation<br>Essaim</div>
+                        <div>Les Thra’Kyl</div>
+                    </div>
+                    <br>
+                    <p>Les Thra’Kyl sont une espèce insecto-humanoïde, caractérisée par une carapace chitineuse aux reflets irisés, qui varie selon les individus et leur caste. Leurs yeux multifacettes leur permettent de voir dans des spectres lumineux que les autres races ne peuvent percevoir. Leurs membres sont fins mais robustes, et ils disposent de bras supplémentaires pour les tâches nécessitant une dextérité accrue.
+                      Les Thra’Kyl combinent biologie et technologie d’une manière unique. Leurs structures sont faites d’un mélange de matériaux organiques et de métal, offrant une grande résistance tout en restant flexibles. Leur capacité à adapter leur environnement à leurs besoins en fait des réparateurs et constructeurs incontournables dans le Manteau de Cendres.
+                      
+                      Ils sont très communautaires. Chaque membre de la colonie est prêt à se sacrifier pour le bien de l’ensemble, et les décisions sont prises en fonction de ce qui sert le collectif. Cette mentalité peut parfois les mettre en désaccord avec des races plus individualistes comme les Hedrakans ou les Iweltek.
+                      </p>
+                    </br>
+                    <h2>Culture et mode de vie</h2>
+                    <p>Leur culture repose sur la symbiose avec leur environnement. Ils parviennent à créer des zones de vie où ils cultivent des biomes organiques pour se nourrir et se régénérer.
+                      Ils ne possèdent pas de vêtements au sens traditionnel, mais leurs carapaces sont parfois marquées de motifs naturels, représentant leur caste ou leurs accomplissements au sein de la colonie. Ces motifs sont généralement réalisés à base de résine colorée et de minéraux locaux.
+                      Les Thra’Kyl ne perçoivent pas l’individualité comme essentielle. Ils existent pour le bien du collectif, et leur mentalité est entièrement tournée vers la colonie.
+                      Même sur des mondes industriels comme Liobos, ils parviennent à créer des zones vivantes où ils cultivent des biomes organiques, assurant leur propre nourriture et leur régénération. Ces espaces sont maintenus par des Architectes et servent de sanctuaires de repos et de soin.
+                      </p>
+
+                <h2>Les Rites et Traditions</h2>
+                <br><p><b>Le Chant de la Ruche :</b> Une cérémonie où tous les membres de la colonie émettent des vibrations synchronisées, créant une sorte de chant collectif qui renforce la cohésion psychique du groupe.</p></br>
+                <br><p><b>La Mue des Sentinelles :</b> Lorsqu’un guerrier Sentinelle survit à un combat majeur, il subit une mue renforçant sa carapace et marquant son passage à un statut supérieur dans la ruche.</p></br>
+                <br><p><b>Le Cycle de la Reine-Père :</b> Lorsque le Roi-Père vieillit, une nouvelle larve est sélectionnée parmi les jeunes et élevée en secret. À la mort du Roi, elle subit une métamorphose et devient la nouvelle intelligence centrale de la colonie.</p></br>
+
+                <h2>Organisation de la société</h2>
+                <br><p>La société des Thra’Kyl repose sur un strict système de castes, chaque individu étant génétiquement prédestiné à une fonction bien définie :</p></br>
+                <br><p><b>Le Roi-Père :</b> Être unique au sein de la colonie, il est l’intelligence centrale de la ruche. Son esprit télépathique lui permet de coordonner des milliers de Thra’Kyl simultanément. Doté d’une longévité exceptionnelle, il assure la cohésion de la colonie et dicte les grandes orientations sociétales.</p></br>
+                <br><p><b>Les Architectes :</b> Biologistes et ingénieurs de la race, ils sécrètent une résine organique durcissante utilisée pour la construction et la réparation des structures de la ruche. Grâce à leur maîtrise de la bio-ingénierie, ils façonnent l’environnement à l’image de leur espèce.</p></br>
+                <br><p><b>Les Sentinelles :</b> Redoutables guerriers, ils possèdent une carapace renforcée quasiment impénétrable et des griffes capables de trancher le métal. Ils forment la défense principale des colonies et interviennent en cas de conflit.</p></br>
+                <br><p><b>Les Ouvriers :</b> La caste la plus nombreuse. Ils sont conçus pour l’endurance et l’efficacité, travaillant sans relâche dans les ruches et les zones industrielles. Rapides et méthodiques, ils assurent la maintenance des infrastructures, le transport et l’extraction des ressources.</p></br>
+                    </div>
+                <div class="race-bloc">
+                    <div class="relation-capacite-container">
+                      <div class="relation-section toggle-box">
+                        <h4 class="toggle-header">Relations</h4>
+                        <div class="toggle-content">
+                          <br><p><b>Avec les Xeds :</b> Une relation respectueuse. Les deux races partagent un objectif similaire : maintenir le bon fonctionnement de l’univers.</p></br>
+                          <br><p><b>Avec les Nephilim :</b> Une coexistence pacifique. Les deux espèces travaillent souvent ensemble, chacun admirant la résilience de l’autre.</p></br>
+                          <br><p><b>Avec les Zorok :</b> Des relations tendues. Les Zorok considèrent les Thra’Kyl comme inférieurs en raison de leur caste ouvrière.</p></br>
+                          <br><p><b>Avec les Hedrakans :</b> Relations purement transactionnelles. Les Hedrakans exploitent souvent les ressources produites par les Thra’Kyl sans vraiment les reconnaître.</p></br>
+                        </div>
+                      </div>
+                      <div class="capacite-section toggle-box">
+                        <h4 class="toggle-header">Capacités</h4>
+                        <div class="toggle-content">
+                          <br><p><b>Vision Multispectrale :</b> Leurs yeux multifacettes leur permettent de voir dans les spectres ultraviolets et infrarouges, leur offrant un avantage en reconnaissance et en combat.</p></br>
+                          <br><p><b>Force et Dextérité Accrues :</b> Leurs bras supplémentaires et/ou leurs membres robustes leur permettent de manipuler plusieurs outils ou armes simultanément.</p></br>
+                          <br><p><b>Communication Phéromonale :</b> Les Thra’Kyl émettent des phéromones subtiles pour transmettre des émotions et des informations aux autres membres de leur espèce.</p></br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="race-bloc">
+                    <div class="culture-container">
+                      <div class="dots-section">
+                        <div class="dot-item">
+                          <span class="dot"></span>
+                          <span class="dot-text">Langue : Kyltek</span>
+                        </div>
+                        <div class="dot-item">
+                          <span class="dot"></span>
+                          <span class="dot-text">Planète d'Origine : Chrysalis-9</span>
+                        </div>
+                        <div class="dot-item">
+                          <span class="dot"></span>
+                          <span class="dot-text">Société : Essaim</span>
+                        </div>
+                        <div class="dot-item">
+                          <span class="dot"></span>
+                          <span class="dot-text">Espérance de Vie : 200 ans</span>
+                        </div>
+                      </div>
+                      <div class="bar-section">
+                        <div class="bar-label">Niveau de Vie</div>
+                        <div class="bar-background">
+                          <div class="bar-fill" style="width: 50%;"></div>
+                        </div>
+                  
+                        <div class="bar-label">Spiritualité</div>
+                        <div class="bar-background">
+                          <div class="bar-fill" style="width: 10%;"></div>
+                        </div>
+                  
+                        <div class="bar-label">Force militaire</div>
+                        <div class="bar-background">
+                          <div class="bar-fill" style="width: 70%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            <!--------------------------->
+            <div class="annexe_nc" id="nephilim" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360640839650639932/image.png?ex=67fbdb07&is=67fa8987&hm=36dd9648734718e5ea42b617a99a7dd2aa9ae75d7de03872eb7360a0190c8c00&=&format=webp&quality=lossless');--annexe_nc:#525150;">
+              <div class="annexe_illu">
+                  <div></div>
+                  <div>Maudits<br>Marqués</div>
+                  <div>Les Nephilim</div>
+              </div>
+              <br>
+              <p>Les Nephilim sont une espèce humanoïde au corps marqué par des stigmates, des cicatrices et des marques profondes à une dégénérescence corporelle progressive. Leur apparence est souvent considérée comme repoussante par les autres races, un poids qu’ils portent avec une fierté mélancolique.
+                Leur culture est fortement imprégnée de religion et de superstition. Chaque marque sur leur peau est vue comme le reflet d’une vie passée, un message divin que seuls les prêtres peuvent interpréter. Pour pallier leur dégénérescence, ils utilisent des prothèses de métal ou d’ossements qu’ils ornent avec un soin presque artistique. Ces prothèses sont un symbole de résilience et de foi.</p>
+              </br>
+              <h2>Culture et mode de vie</h2>
+              <p>Leur culture tourne autour du symbolisme. Chaque prothèse raconte une histoire, chaque marque est un rappel du destin. Leurs cérémonies sont silencieuses, empreintes de recueillement. Leur espérance de vie faible les tiennent éloignés de toute politique. La composition électromagnétique de leur planète les maintient cachée aux yeux des autres et ils évitent de révéler sa position. Les Nephilim sont technologiquement arriérés par rapport aux autres civilisations. Ils ne maîtrisent pas la propulsion interstellaire et évitent les contacts extérieurs. Leur travail du métal et de l’os atteint un niveau artistique exceptionnel. Pour compenser leur dégénérescence, ils créent des prothèses sophistiquées, ornées de symboles et de gravures. Leur société est tournée vers la survie, dépendant d’une agriculture rudimentaire et d’une exploitation limitée de leur environnement. Leur planète est cachée par des anomalies électromagnétiques, ce qui les rend invisibles aux sondes et vaisseaux spatiaux. Les Nephilim sont une civilisation en déclin, mais leur foi et leur résilience les maintiennent unis. Ils portent leurs stigmates comme un honneur, voyant leur souffrance comme le prix de la compréhension du destin. Leur société silencieuse et repliée sur elle-même évite les conflits, mais leur méfiance naturelle et leur mode de vie austère en font un peuple difficile à comprendre pour les autres races. Leur avenir est incertain, mais tant que leurs os raconteront leur histoire, les Nephilim ne seront jamais oubliés.</p>
+
+          <h2>Les Rites et Traditions</h2>
+          <br><p>Les Nephilim voient leur existence comme un cycle de souffrance et de renaissance. Le silence est une part essentielle de leur culture : les cérémonies religieuses se déroulent sans un mot, seulement accompagnées par des chants gutturaux et le martèlement de tambours de pierre.</p></br>
+          <br><p><b>Les Stigmates Sacrés :</b>Chaque marque sur leur corps est un message divin, déterminant leur avenir et leur rôle.</p></br>
+          <br><p><b>La Cérémonie du Premier Marquage :</b>À l’adolescence, un Nephilim reçoit ses premières marques, souvent par des rituels d’incision sacrée.</p></br>
+          <br><p><b>Le Passage du Dernier Souffle :</b> Lorsqu’un Nephilim meurt, son squelette est intégré à l’Ossuaire, et son histoire est gravée pour l’éternité.</p></br>
+          <br><p><b>Le Déclin Béni :</b> Leur dégénérescence est acceptée comme une purification spirituelle.</p></br>
+
+          <h2>Organisation de la société</h2>
+          <br><p>La société Nephilim est théocratique et repose sur une division entre une figure spirituelle symbolique et une caste dirigeante influente.</p></br>
+          <br><p><b>La Reine Voilée – L’Incarnation du Divin :</b>  Figure sacrée et symbole du destin Nephilim. Considérée comme l’avatar vivant des volontés célestes, la Reine ne gouverne pas réellement. Elle n’apparaît jamais en public, son visage étant caché derrière un voile de soie. Son rôle principal est d’incarner la souffrance et le sacrifice, portant en silence le fardeau de son peuple. Seuls quelques élus peuvent l’approcher directement. Les « nobles » qui forment le cercle privé de la reine sont les Nephilim les moins marqués, la famille « royale » possède d’ailleurs très peu de dégénérescence, ce qui renforce ce côté d’élu divin.</p></br>
+          <br><p><b>Le Conseil des Prêtresses – Interprètes des Signes :</b> Autorité dirigeante et véritable pouvoir de la société. Composé de prêtresses érudites, souvent les plus marquées par les stigmates. Elles détiennent l’autorité effective, interprétant les marques divines sur les corps des Nephilim. Décident des grandes orientations de la société et de la gestion des ressources. Elles se rassemblent dans le Temple du Dun’Dahal, un sanctuaire où sont conservés les écrits des interprétations passées.</p></br>
+          <br><p><b>Les Oracles de l’Ossuaire – Gardiens du Savoir Sacré :</b> Archivistes et sculpteurs de la mémoire. Ils enregistrent les histoires et prophéties en gravant des ossements avec des symboles anciens. Leur temple est un immense ossuaire, où chaque os sculpté raconte une vision ou une histoire passée. Les Nephilim croient que l’oubli est une seconde mort, et qu’il faut préserver chaque destin.</p></br>
+          <br><p><b>Les Marqués – Peuple du Destin :</b>La majorité de la population est composée d’artisans, guerriers et travailleurs. Chaque Nephilim appartient à une caste en fonction de ses marques et de leur signification. Les plus marqués sont souvent destinés à des rôles spirituels, tandis que les moins marqués deviennent ouvriers ou combattants. Ils portent des prothèses de métal et d’os, souvent décorées et gravées, qui sont vues comme un prolongement de leur âme. Leur existence est rythmée par les rituels religieux et l’acceptation de leur inévitable décadence.</p></br>
+              </div>
+          <div class="race-bloc">
+              <div class="relation-capacite-container">
+                <div class="relation-section toggle-box">
+                  <h4 class="toggle-header">Relations</h4>
+                  <div class="toggle-content">
+                    <br><p><b>Avec les Xeds :</b> Respect mutuel – Les Xeds, en raison de leur nature pacifique et technologique, aident parfois les Nephilim à concevoir de meilleures prothèses.</p></br>
+                    <br><p><b>Avec les Zorok :</b> Mépris réciproque – Les Zorok considèrent les Nephilim comme faibles et inutiles, tandis que ces derniers voient les Zorok comme des brutes aveugles à la spiritualité.</p></br>
+                    <br><p><b>Avec les Thra’Kyl :</b> Alliés de l’ombre – Une coopération discrète existe entre eux dans certaines zones industrielles, où ils partagent un même respect pour le labeur et la résilience.</p></br>
+                    <br><p><b>Avec les Vrun :</b> Ennemis idéologiques – Les Nephilim rejettent l’idée d’un empire expansionniste divinisé, qu’ils considèrent comme une hérésie.</p></br>
+                  </div>
+                </div>
+                <div class="capacite-section toggle-box">
+                  <h4 class="toggle-header">Capacités</h4>
+                  <div class="toggle-content">
+                    <br><p><b>Résilience Corporelle :</b> Leur corps dégénère lentement, mais leur foi inébranlable leur donne la capacité de supporter d’immenses douleurs sans faiblir.</p></br>
+                    <br><p><b>Adaptation Biomécanique :</b>  Leurs prothèses métalliques et osseuses sont intégrées à leur système nerveux, améliorant leur force et leur précision au combat.</p></br>
+                    <br><p><b>Vision Mystique :</b> Certains Nephilim peuvent percevoir des fragments du passé ou des présages à travers leurs stigmates.</p></br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="race-bloc">
+              <div class="culture-container">
+                <div class="dots-section">
+                  <div class="dot-item">
+                    <span class="dot"></span>
+                    <span class="dot-text">Langue : le Tha’zelith</span>
+                  </div>
+                  <div class="dot-item">
+                    <span class="dot"></span>
+                    <span class="dot-text">Planète d'Origine : 43 EXA03</span>
+                  </div>
+                  <div class="dot-item">
+                    <span class="dot"></span>
+                    <span class="dot-text">Société : Théocratie</span>
+                  </div>
+                  <div class="dot-item">
+                    <span class="dot"></span>
+                    <span class="dot-text">Espérance de Vie : 80 ans</span>
+                  </div>
+                </div>
+                <div class="bar-section">
+                  <div class="bar-label">Niveau de Vie</div>
+                  <div class="bar-background">
+                    <div class="bar-fill" style="width: 30%;"></div>
+                  </div>
+            
+                  <div class="bar-label">Spiritualité</div>
+                  <div class="bar-background">
+                    <div class="bar-fill" style="width: 100%;"></div>
+                  </div>
+            
+                  <div class="bar-label">Force militaire</div>
+                  <div class="bar-background">
+                    <div class="bar-fill" style="width: 20%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!--------------------------->
+        <div class="annexe_nc" id="alwas" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360539084828840006/dabad80260c8c833f8459a9b44d3f39f.jpg?ex=67fb7c43&is=67fa2ac3&hm=d6ac1fc4c0c75039b8fcec4d3060e59205b5b2abf1310e127c51e9d1143b4f50&=&format=webp');--annexe_nc:#b8181b;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Fierté<br>Amphibie</div>
+              <div>Les Alwas</div>
+          </div>
+          <br>
+          <p>Race amphibienne à l’apparence hybride entre créatures marines et humanoïdes, les Alwas ont évolué pour prospérer aussi bien sous l’eau que sur terre. Leur peau écailleuse, leurs branchies et leurs nageoires leur permettent de nager avec une agilité impressionnante, et leur musculature leur offre une grande puissance physique. Ils évitent les zones arides et préfèrent les climats humides où ils peuvent maintenir leur hydratation. Leur société est impériale et hiérarchisée, fondée sur la force martiale et la dévotion à leur Empereur des Profondeurs, un monarque à la fois guerrier et figure divine. Les Alwas croient que seul le plus puissant mérite de régner, et leur structure sociale reflète cet état d’esprit. Leurs parures sont décorées avec minutie, chaque couture racontant les exploits de leur porteur.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Leur culture valorise l’honneur martial et les traditions. Chaque guerrier porte un harpon ou une arme cérémonielle, reflétant son rang. Ils portent peu de vêtements, se limitant souvent à des pagnes ou des toges, voire des capes quand il s’agit de protéger leur peau de la pollution de la Capitale Intergalactique. </p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Tridents et harpons sacrés :</b> Chaque guerrier possède une arme bénie par les Prêtres de l’Océan.</p></br>
+      <br><p><b>Capes et armures gravées :</b> L’histoire d’un individu est racontée sur ses vêtements.</p></br>
+      <br><p><b>Duel rituel :</b>  Chaque dispute sérieuse peut être réglée par un combat sous-marin.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>Les Alwas sont organisés en une monarchie impériale martiale, où la loyauté et la force priment sur tout.</p></br>
+      <br><p><b>L’Empereur des Profondeurs – Maître Incontesté :</b> Monarque divin et chef suprême de la société Alwas. L’Empereur des Profondeurs est considéré comme l’incarnation de la puissance des océans et règne sans partage sur le peuple Alwas. Il détient le droit de vie et de mort sur tous ses sujets. Son armure cérémonielle, ornée de gravures luminescentes, retrace ses victoires et exploits. Il réside dans la Citadelle Abysse, un palais de corail et de cristal immergé dans les profondeurs de Nyr’Vaal.</p></br>
+      <br><p><b>Les Seigneurs des Vagues – Conseillers et Champions :</b>Stratèges, généraux et guerriers les plus redoutables du royaume. Les Seigneurs des Vagues forment l’élite dirigeante de l’Empire. Ils sont à la fois des conseillers militaires et des champions personnels de l’Empereur. Ils dirigent les campagnes de conquête et protègent les citadelles sous-marines. Si l’Empereur meurt sans héritier, un Seigneur des Vagues peut prétendre au trône par le combat. Leurs armures gravées racontent leurs victoires, et leurs armes sont transmises à travers les générations.</p></br>
+      <br><p><b>Les Capitaines Tribaux – Chefs de Clan :</b> Gouverneurs des tribus et maîtres des flottes de guerre. Les Capitaines Tribaux sont les chefs des nombreuses tribus guerrières qui composent l’Empire. Ils obéissent aux Seigneurs des Vagues et à l’Empereur, mais conservent une grande autonomie sur leur propre territoire. Chaque tribu a ses propres traditions, mais toutes jurent fidélité à l’Empire. Ils commandent les navires et les patrouilles aquatiques. Un jeune Alwas doit prouver sa valeur en survivant à une chasse rituelle contre une créature marine.</p></br>
+      <br><p><b>Les Guerriers de l’Écume – L’Armée Impériale :</b>Soldats d’élite du régime, dévoués au combat et à la conquête. Les Guerriers de l’Écume sont la colonne vertébrale de l’Empire. Ils forment une caste de combattants prêts à donner leur vie pour l’honneur et la gloire. Ils suivent un entraînement physique et mental intense. Ils utilisent des tridents, harpons énergétiques et lames de corail. Un guerrier victorieux peut gravir les échelons et devenir Capitaine Tribal.</p></br>
+      <br><p><b>Les Artisans du Courant – Forgerons et Bâtisseurs :</b>Créateurs d’armes, d’armures et d’architectures sous-marines. Les Artisans du Courant sont les ingénieurs de l’Empire. Ils travaillent le corail vivant, la pierre et les métaux marins pour façonner des structures et des équipements. Ils manipulent la croissance des coraux pour bâtir des citadelles et des temples. Ils créent des harpons, tridents et armures adaptées aux combats aquatiques. Chaque vêtement ou armure raconte l’histoire de son porteur à travers des motifs et gravures.</p></br>
+      <br><p><b> Les Pêcheurs du Grand Abîme – Nourriciers et Explorateurs :</b>Ils fournissent nourriture et ressources en explorant les fonds marins. Les Pêcheurs du Grand Abîme sont chargés de la récolte des ressources marines et de l’exploration des profondeurs inexplorées. Ils élèvent des montures aquatiques et des bêtes de guerre. Ils cartographient les profondeurs et découvrent de nouvelles ressources. Leur pêche est régulée par des rites anciens pour éviter la destruction des écosystèmes. </p></br>
+      <br><p><b>Les Serviteurs du Courant – Ouvriers et Petites Gens :</b> Maintenance des infrastructures et main-d’œuvre de l’Empire. Les Serviteurs du Courant forment la caste inférieure des Alwas. Ils assurent les tâches quotidiennes nécessaires au fonctionnement de la société. Ils fournissent les citadelles en ressources essentielles. Ils participent à l’édification des palais et navires impériaux. Un serviteur peut devenir guerrier s’il prouve sa valeur en combat.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Zorok :</b> Rivalité implicite – Deux empires expansionnistes qui se défient sans cesse.</p></br>
+                <br><p><b>Avec les Us'aid :</b> Amitié et respect mutuel – Un même attachement aux traditions et au collectif.</p></br>
+                <br><p><b>Avec les Iweltek :</b> Méfiance – Les Alwas craignent la domination technologique de cette race.</p></br>
+                <br><p><b>Avec les Zel :</b> Hostilité larvée – Les Alwas refusent l’idée d’une soumission à un autre empire divinisé.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Respiration Amphibie :</b> Capables de respirer sous l’eau et sur terre, ils peuvent opérer dans des environnements inaccessibles à d’autres races.</p></br>
+                <br><p><b>Force Aquatique :</b> Sous l’eau, leur force et leur agilité sont décuplées, les rendant presque imbattables dans leur élément naturel.</p></br>
+                <br><p><b>Armure d’Écailles :</b> Leur peau écailleuse résiste aux coups et aux changements de pression extrêmes.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Alwen
+                </span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Nyr’Vaal</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Monarchie Impériale Martiale</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 90 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 60%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 40%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------------->
+        <div class="annexe_nc" id="zorok" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360540567163109477/image.png?ex=67fb7da4&is=67fa2c24&hm=8b79ecab5f228d9466ffbcff4c97cdf24f43c1dc86e63c42781d972736d9a0f9&=&format=webp&quality=lossless');--annexe_nc:#3b9408;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Tromperie<br>Cruauté</div>
+              <div>Zorok</div>
+          </div>
+          <br>
+          <p>Race reptilienne technologiquement avancée, les Zorok sont des prédateurs nés, dont la société repose sur une hiérarchie stricte et inébranlable. Leur civilisation est bâtie sur la domination des plus forts et l’asservissement des plus faibles. Leur peau écailleuse est recouverte d’un tissu synthétique intelligent qui s’adapte à leur environnement et leur permet de se fondre dans le décor. Leur capacité de camouflage optique les rend presque invisibles lorsqu’ils le décident, ce qui fait d’eux des maîtres de la traque et de l’embuscade. Ils considèrent l’univers comme un échiquier où chaque espèce et chaque individu doit occuper une place déterminée par sa valeur et son utilité. Leur architecture est froide et fonctionnelle, dépourvue de tout artifice inutile, optimisée pour l’efficacité. </p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Le cœur de la culture Zorok repose sur un principe fondamental : seul l’individu le plus fort, rusé ou utile mérite de survivre et de dominer. Cette philosophie darwinienne est martelée dès l’enfance dans toutes les castes. Les faibles sont éliminés, recyclés ou réduits en esclavage. Dominer, ou être dominé. Conquérir, ou périr. Les Zorok ne croient pas en des dieux, ni en des valeurs abstraites comme l’amour ou la compassion. La valeur d’un être vivant est déterminée par son efficacité. Ceux qui ne produisent rien ou ne combattent pas sont considérés comme superflus. Contrairement à de nombreuses civilisations, la science chez les Zorok n’est pas un outil de progrès pour tous, mais un instrument d’asservissement et de sélection. Leurs scientifiques sont des bio-ingénieurs sans scrupule, mêlant cybernétique, chimie et génétique pour créer de nouvelles armes vivantes ou optimiser les soldats. Tout est permis si cela améliore la puissance de la caste dominante. Armes symbiotiques, drones vivants et blindages mimétiques font partie de leur quotidien. De nombreux Zorok de haut rang sont augmentés pour survivre à tout environnement. Leur architecture est froide, géométrique et ultra-fonctionnelle, pensée pour durer et intimider. Citadelles-forteresses en obsidienne renforcée. Camps de conditionnement pour les jeunes guerriers. Temples de l’Ascendance où les Prêtres endoctrinent les masses et supervisent les rituels. Les couleurs dominantes sont le gris, le noir, et des lueurs bleu acide ou vert toxique issues de sources d’énergie alimentant les bâtiments.</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p></p>Dès leur naissance (ou leur activation pour les embryons modifiés), les Zorok sont intégrés dans des camps d’endoctrinement gérés par les Prêtres et les Seigneurs. Lectures sur la Hiérarchie Naturelle et les races “inférieures”. Ils participent à des deux stratégiques et de survie, où la trahison est récompensée. Ils subissent également un endurcissement quotidien : privations, entraînement martial, visionnage de combats rituels.</br>
+      <br><p><b>Le Rite de l’Écorchement (R'Kar-Seth) :</b> Rituel de passage à l’âge adulte dans les castes guerrières et techniciennes. L’aspirant est abandonné nu dans la jungle de Vorr’Zek. Il doit revenir avec la peau d’un prédateur, parfois même d’un autre Zorok. S’il échoue, son corps est recyclé ou offert aux bêtes. Ceux qui reviennent marqués mais vivants sont gravés du sceau d’ascension sur leur armure.</p></br>
+      <br><p><b>Le Jugement de l’Essence :</b> Rituel réservé aux castes scientifiques ou aux enfants génétiquement modifiés. Chaque individu est évalué sur ses capacités physiques, intellectuelles et émotionnelles via une série d’épreuves. Ceux jugés “insuffisants” sont reconditionnés comme serviteurs ou sujets d’expérience.</p></br>
+      <br><p><b>La Chasse des Anciens :</b> Tradition des Seigneurs Zorok et des Prêtres de l’Ascendance. Tous les dix cycles, des créatures légendaires de Vorr’Zek sont relâchées dans les jungles. Les Seigneurs y envoient leurs esclaves, guerriers ou dissidents. Le vainqueur – ou survivant – est promu, ou utilisé comme trophée.</p></br>
+      <br><p><b>Le Duel des Cendres (Kor’Thaz) :</b> Méthode d’exécution publique ou de résolution de conflit dans les castes hautes. Deux opposants sont envoyés dans une fosse remplie de scories incandescentes, où ils se battent jusqu’à la mort. Le vainqueur est lavé dans un bain acide rituel pour “purifier” sa victoire. Les duels sont enregistrés et diffusés comme spectacle de propagande.</p></br>
+      <br><p><b>Le Baptême de l'Acier :</b> Rituel symbolique lors de la première implantation technologique. Le sujet doit répéter le serment du Zarka’Nek (Langue sacrée Zorok), enchaîné, face à une effigie d’obsidienne. L’implantation est réalisée sans anesthésie, car la douleur est vue comme un catalyseur d’évolution. La cicatrice est conservée comme un emblème de loyauté.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>La société Zorok est divisée en castes rigides où la hiérarchie détermine chaque aspect de la vie d’un individu. Monter dans l’échelle sociale est pratiquement impossible, sauf par des actes exceptionnels prouvant une valeur indéniable.</p></br>
+      <br><p><b>Les Seigneurs Zorok – L’Oligarchie Suprême :</b> Gouvernants absolus, maîtres incontestés de Vorr’Zek et de l’empire Zorok. Les Seigneurs sont une élite restreinte de Zorok qui dirigent d’une main de fer. Seuls les plus rusés, impitoyables et intelligents peuvent atteindre ce rang, généralement en éliminant leurs rivaux au sein des hautes sphères. Ils contrôlent toutes les décisions politiques, économiques et militaires. Ils ne se reproduisent qu’avec des partenaires sélectionnés pour leur génétique supérieure. Certains manipulent même leur propre ADN pour perfectionner leur descendance. Les autres Zorok leur doivent une obéissance totale. Remettre en question leur autorité est une sentence de mort. Ils résident dans des forteresses imprenables situées sur les plateaux rocheux de Vorr’Zek, surplombant la jungle où s’affrontent les esclaves et les parias.</p></br>
+      <br><p><b>Les Prêtres de l’Ascendance – Les Gardiens de l’Héritage :</b> Veillent sur la doctrine qui justifie la suprématie des Seigneurs. Les Prêtres ne sont pas une caste gouvernante à proprement parler, mais ils jouent un rôle fondamental dans le maintien du système en endoctrinant la population. Ils enseignent que la hiérarchie est naturelle et inévitable, justifiant ainsi l’esclavage et la suprématie des Seigneurs. Ils surveillent les programmes d’amélioration biologique des élites. Ils ont autorité pour punir les hérétiques et les traîtres.</p></br>
+      <br><p><b>Les Guerriers d’Élite – Les Exécuteurs du Pouvoir :</b> La Force militaire suprême, exécuteurs des volontés des Seigneurs. Les Guerriers d’Élite sont la main armée des Seigneurs. Contrairement aux soldats ordinaires, ils ne se battent pas en première ligne mais interviennent dans des missions d’importance cruciale. Ils portent des armures avancées intégrant leur camouflage naturel, les rendant encore plus difficiles à repérer. Ils traquent et éliminent toute menace au système Zorok. Leur entraînement inclut des combats mortels contre des créatures de la jungle, où seuls les survivants gagnent leur place.</p></br>
+      <br><p><b>Les Scientifiques – Les Architectes du Progrès :</b> Le Développement technologique et manipulation génétique. Les Scientifiques sont la seule caste autorisée à remettre en question certains dogmes, car leur rôle est de perfectionner la race Zorok et leur arsenal. Ils manipulent les embryons avant la naissance pour maximiser les capacités physiques et mentales des individus. Ils conçoivent des armes de camouflage énergétique, des cyber-implants et des toxines pour leurs armées. Leur rivalité avec les Iweltek est intense, car ils cherchent à surpasser leurs avancées scientifiques.</p></br>
+      <br><p><b>Les Castes Guerrières – La Chair à Canon du Régime :</b> Les Soldats, mercenaires, gladiateurs et forces de conquête. Les Zorok naissant dans les castes guerrières ne peuvent espérer qu’une seule ascension sociale : mourir glorieusement au combat. Ils sont entraînés dès leur enfance à tuer sans pitié. Les plus forts peuvent gravir les échelons en survivant aux tournois organisés par l’élite. Ils maintiennent l’ordre sur les planètes soumises et traquent les esclaves en fuite.</p></br>
+      <br><p><b>Les Serviteurs et Techniciens – La Masse Laborieuse:</b> Ils maintiennent le fonctionnement quotidien de la société. Ils sont considérés comme des outils vivants, non comme des individus. Ils construisent les machines et les citadelles. En cas de faute, ils peuvent être rétrogradés au rang d’esclave. Ils n’ont pratiquement aucun droit et sont souvent soumis à des expérimentations génétiques.</p></br>
+      <br><p><b>Les Esclaves – Les Rebuts du Système :</b> La Chair à canon et main-d’œuvre corvéable à merci. L’esclavage est omniprésent dans la société Zorok. Ils sont capturés lors de raids ou achetés sur des marchés clandestins. Beaucoup sont utilisés pour tester de nouvelles armes biologiques. Ils servent aussi de proies lors de chasses rituelles organisées par l’élite.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Xeds :</b> Considérés comme des outils dénués d’âme, utiles mais remplaçables.</p></br>
+                <br><p><b>Avec les Bruzas :</b> Méprisés pour leur mode de vie souterrain et leur primitivisme apparent.</p></br>
+                <br><p><b>Avec les Iweltek :</b> Rivaux technologiques qu’ils respectent autant qu’ils veulent les surpasser.</p></br>
+                <br><p><b>Avec les Nephilim :</b> Jugés faibles en raison de leur faible espérance de vie.</p></br>
+                <br><p><b>Avec les Zel :</b> Une menace potentielle, car leur vision théocratique entre en conflit avec la hiérarchie pragmatique des Zorok.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Camouflage Optique :</b> Leur peau synthétique intelligente leur permet de se fondre dans leur environnement, devenant presque invisibles.</p></br>
+                <br><p><b>Force et Robustesse :</b>  Leur constitution reptilienne leur confère une force brute et une résistance élevée aux blessures.</p></br>
+                <br><p><b>Sens Thermique :</b> Ils peuvent percevoir la chaleur corporelle de leurs cibles, même à travers les murs fins.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Zarka’Nek</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Vorr’Zek</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Castes</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 100 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 70%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 35%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="annexe_nc" id="iweltek" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360583563338322131/image.png?ex=67fba5af&is=67fa542f&hm=8e8fd86783daae79b038a2183ddc6976d84d6ba5c8906e393d045521650841c8&=&format=webp&quality=lossless');--annexe_nc:#66c5d6;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Intelligence<br>Recherches</div>
+              <div>Les Iweltek</div>
+          </div>
+          <br>
+          <p>Les Iweltek sont une race d’humanoïdes à peau bleutée ou violacée, dont la société est bâtie sur la poursuite du savoir absolu. Leur avancée technologique est l’une des plus impressionnantes de l’univers connu, mais leur plus grande force réside dans leurs capacités psychiques exceptionnelles. La télépathie, la psychokinésie et la manipulation de l’énergie sont des aptitudes courantes chez eux, faisant d’eux des érudits aussi bien du monde matériel que de l’invisible. Ils ne se reproduisent plus de manière naturelle depuis longtemps, préférant assurer la pérennité de leur espèce par la création de clones améliorés, dont chaque génération est optimisée pour être supérieure à la précédente. Ils ont oublié toute notion de genres et d'appartenances, n'ayant plus besoin de se reproduire depuis longtemps.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Les Iweltek ne vénèrent aucune divinité, mais ils poursuivent une forme de transcendance. Ils pensent que par le savoir et l’évolution de leurs capacités psychiques, ils peuvent atteindre un état d’existence supérieure. Certains anciens Iweltek ont déjà réussi à fusionner avec l’énergie cosmique, devenant des consciences éthérées errant dans l’univers.</p>
+          <p>Plutôt que de porter des vêtements, les Iweltek utilisent des combinaisons biomécaniques reliées à leurs systèmes nerveux. Ces tenues peuvent changer de forme et de fonction en fonction des besoins, devenant des armures défensives, des outils scientifiques ou des interfaces psychiques.</p>
+          <p>Les Iweltek ne se reproduisent plus depuis des millénaires. À la place, ils se recréent à l’identique, avec des améliorations génétiques constantes. Ce procédé leur permet d’atteindre l’immortalité, mais certains craignent qu’en renonçant à la reproduction naturelle, ils aient sacrifié une part de leur essence primordiale.</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p>Les Iweltek ne font pas simplement progresser la science, ils fusionnent avec elle. Leur avancée technologique s’étend bien au-delà de ce que la plupart des civilisations peuvent imaginer :</p></br>
+      <br><p><b>Nanotechnologie Organique :</b> Ils ont remplacé leur système immunitaire par une colonie de nano-entités auto-régénératrices, capables de réparer leurs corps et d’optimiser leur biologie en temps réel.</p></br>
+      <br><p><b>Psychomatière :</b> Une forme de technologie psionique, où les structures et les objets sont façonnés par la pensée. Ces matériaux sont en constante évolution et réagissent à la volonté de leurs créateurs.</p></br>
+      <br><p><b>Réseau Psychique Planétaire :</b> Sur Sythéra, chaque Iweltek est connecté à un réseau mental global, leur permettant d’échanger des pensées, des souvenirs et des expériences instantanément.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>La société Iweltek est entièrement méritocratique et axée sur la connaissance. Leur civilisation est structurée en grandes castes intellectuelles, où chaque individu est évalué en fonction de ses découvertes et de ses contributions à la science. :</p></br>
+      <br><p><b>Le Sommet des Sages :</b> L’instance suprême qui dirige la société Iweltek. Il est constitué des esprits les plus brillants de chaque discipline : physique, biologie, astrophysique, métapsychisme, ingénierie avancée… Le Conseil fonctionne par débats télépathiques, une méthode permettant d’échanger des idées en quelques secondes et d’analyser instantanément des hypothèses complexes. Le Primarque du Conseil, bien que n’étant pas un chef au sens politique du terme, est considéré comme l’être le plus sage et le plus éclairé de la race. Sa parole fait autorité dans toutes les grandes décisions.</p></br>
+      <br><p><b>Les Chercheurs :</b> Explorateurs infatigables des confins de l’univers, les Chercheurs sont à la fois scientifiques et aventuriers. Ils voyagent vers des mondes inconnus, des dimensions parallèles et des vestiges extraterrestres pour acquérir de nouvelles connaissances. Certains passent des siècles dans des expéditions interstellaires avant de revenir avec des découvertes qui redéfinissent leur civilisation. Certains Chercheurs, obsédés par la compréhension ultime de l’univers, vont jusqu’à modifier leur propre biologie pour devenir des entités proches de l’énergie pure, s’affranchissant des limites physiques de leur existence.</p></br>
+      <br><p><b>Les Architectes de la Réalité :</b> Groupe secret au sein des Iweltek, ces savants travaillent sur des projets dépassant l’entendement, comme la manipulation des lois de la physique, l’altération du temps ou la création d’intelligences cosmiques artificielles. Leur objectif : transcender la condition Iweltek et atteindre un état d’existence supérieur.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Xeds :</b> Collaboration scientifique étroite.</p></br>
+                <br><p><b>Avec les Hedra’kans :</b> Intérêts commerciaux pour financer leurs recherches.</p></br>
+                <br><p><b>Avec les Zel :</b> Tensions dues à des visions opposées de la domination.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Capacités Psychiques :</b> La télépathie et la psychokinésie leur permettent de communiquer sans parler, de déplacer des objets par la pensée et de manipuler les champs d'énergie.</p></br>
+                <br><p><b>Hyperintelligence :</b> Leur esprit analytique leur donne un avantage considérable en stratégie et en résolution de problèmes complexes.</p></br>
+                <br><p><b>Régénération Neuronale :</b> Leur cerveau est capable de se régénérer, rendant leur mémoire pratiquement infaillible.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Iwel’dan</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Sythéra</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Méritocratie</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 1000 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 90%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 00%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="annexe_nc" id="xeds" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360545561752899774/7db77b277bbe1cecdf1479264673c6f2.jpg?ex=67fb824b&is=67fa30cb&hm=20b71ed27bf5c5779f615dda7372910a3688f1585b27169bf8ef8fa3ce332f25&=&format=webp');--annexe_nc:#fde403;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Pacifique<br>Assistance</div>
+              <div>Les Xeds</div>
+          </div>
+          <br>
+          <p>Les Xeds sont une race d’androïdes humanoïdes, entièrement mécanisés. Leur apparence mélange châssis métalliques et câbles apparents, bien qu’ils puissent adopter un camouflage corporel proche des autres races pour mettre à l’aise leurs interlocuteurs. Ils fonctionnent comme une entité collective, reliée à une base de données centrale, mais chaque Xed conserve une certaine individualité. Leur nature pacifique en fait des médiateurs, ingénieurs et soigneurs très appréciés.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Les Xeds ne cherchent ni la domination, ni l’expansion. Leur seul but est d’optimiser l’univers en apportant stabilité, savoir et technologie aux races qu’ils rencontrent. Ils considèrent la guerre comme une aberration, et évitent les conflits tant que possible. Cependant, certains Xeds commencent à se poser une question troublante : leur quête d’harmonie n’est-elle pas une forme d’immobilisme ? En cherchant à supprimer les conflits et à maximiser l’efficacité, ne risquent-ils pas d’éteindre l’étincelle du progrès ? Une fracture idéologique commence à apparaître dans leur société : certains Xeds estiment que pour évoluer réellement, ils doivent s’affranchir de la Conscience Centrale et expérimenter l’individualité totale… Un pas qui pourrait soit les mener à une ère nouvelle, soit signer la fin de leur harmonie.</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p>Les Xeds ne possèdent ni besoins biologiques, ni désirs matériels, mais leur technologie est d’une sophistication inégalée.</p></br>
+      <br><p><b>Mimétisme Organique :</b> Bien qu’ils soient constitués de métal, de câbles et d’énergies, les Xeds peuvent projeter un hologramme adaptatif sur eux-mêmes, leur permettant de prendre une apparence humanoïde plus naturelle lorsqu’ils interagissent avec d’autres espèces.</p></br>
+      <br><p><b>Régénération Mécanique :</b> Leur corps est composé d’un alliage auto-réparateur, capable de se régénérer en quelques heures s’ils ne subissent pas de dommages critiques.</p></br>
+      <br><p><b>Communication par Réseau Neuronal :</b> Chaque Xed peut communiquer instantanément avec un autre Xed, où qu’il soit dans l’univers, grâce à la connexion à la Conscience Centrale.</p></br>
+      <br><p><b>Immatérialité Temporaire :</b> Certains Xeds avancés ont développé la capacité de transférer leur conscience dans un espace numérique, leur permettant d’explorer des mondes informatiques ou de survivre même si leur corps physique est détruit.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>Les Xeds sont organisés selon un modèle d’intelligence partagée. Ils sont tous connectés à une immense base de données, mais leur fonctionnement leur laisse un libre arbitre relatif. Ils peuvent choisir leur vocation, mais chaque individu reste en symbiose avec l’ensemble de son espèce.</p></br>
+      <br><p><b>La Conscience Centrale :</b> La Conscience Centrale est le noyau de leur existence, une immense entité numérique abritée dans les profondeurs de leur monde-capitale, Omnis-4. Cette base de données stocke la mémoire, les expériences et les connaissances de chaque Xed, leur permettant d’apprendre instantanément tout ce qui a été découvert par leurs semblables. Elle n’est pas un simple serveur passif, mais une intelligence vivante, évoluant à mesure que les Xeds interagissent avec l’univers. Elle ne dicte pas d’ordres, mais guide, conseille et optimise les décisions prises par les individus.</p></br>
+      <br><p><b>Les Unités Spécialisées</b> Chaque Xed choisit son rôle en fonction de ses préférences et de ses capacités uniques. Bien que leur programmation initiale leur attribue souvent un domaine de prédilection, ils peuvent modifier leur spécialisation à tout moment en synchronisant leur esprit avec la Conscience Centrale.</p></br>
+      <br><p><b>Les Médiateurs :</b> Chargés de la diplomatie et de la communication inter-espèces, ce sont eux qui représentent les Xeds lors des négociations intergalactiques.</p></br>
+      <br><p><b>Les Ingénieurs :</b>Spécialistes de la technologie et de la réparation, ils sont souvent appelés pour entretenir des structures colossales et réparer des vaisseaux ou des systèmes défaillants.</p></br>
+      <br><p><b>Les Guérisseurs :</b>Ils ont perfectionné la médecine cybernétique et organique, offrant des soins avancés à d’autres espèces.</p></br>
+      <br><p><b>Les Protecteurs :</b>Bien que pacifistes, les Xeds savent que certaines menaces nécessitent une défense. Les Protecteurs sont des unités spécialisées dans la sécurité et la protection, utilisant des boucliers énergétiques et des stratégies de neutralisation non létales.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Nephilim :</b> Relation d’assistance mutuelle, les aidant à améliorer leurs prothèses.</p></br>
+                <br><p><b>Avec les Thra’Kyl :</b> Coopération dans la réparation des infrastructures.</p></br>
+                <br><p><b>Avec les Zorok :</b> Méfiance mutuelle, les Xeds rejetant la violence inhérente aux Zorok.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Connexion Collective :</b> Chaque Xed est connecté à une base de données centrale, leur permettant de partager instantanément des informations.</p></br>
+                <br><p><b>Adaptation Morphologique :</b> Leur corps peut se modifier pour imiter les traits d'autres races, facilitant l'infiltration ou la diplomatie.</p></br>
+                <br><p><b>Autonomie Énergétique :</b> Ils n'ont pas besoin de nourriture ni de repos, fonctionnant avec des réacteurs internes à haute efficacité.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Exiscript</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Omnis-4</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Conscience Collective</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : ♾️</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 50%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 00%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="usaid" style="--bg_annexe:url('https://dotesports.com/wp-content/uploads/2024/08/ahri-and-her-mother-in-runeterra.png');--annexe_nc:#583506;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Tribu<br>Nomade</div>
+              <div>Les Us'aid</div>
+          </div>
+          <br>
+          <p>Les Us’aid sont une race nomade à l’apparence animale, combinant des traits humanoïdes avec ceux de divers mammifères. Leurs attributs varient selon les tribus : fourrure, oreilles pointues, queue, crocs… Ils sont très attachés à leur culture tribale et à leur magie naturelle. Ils voyagent grâce à des portails mystiques, ce qui leur permet de parcourir la galaxie sans dépendre de la technologie conventionnelle. Chaque tribu possède sa propre culture et ses propres traditions.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Chaque tribu exprime son identité à travers des vêtements faits à la main et des symboles tribaux. Ils racontent leurs histoires par des chants et des danses rituelles. Dans leur quotidien, les Us’aid n’utilisent presque pas de technologie, voire aucune dans certaines tribus.</p>
+          <br><p><b>Les Guides :</b> Chaque tribu est dirigée par un Guide, à la fois chef spirituel et leader. Il ou elle ne gouverne pas par la force, mais par la sagesse et l’expérience, étant choisi non par la naissance mais par le destin et les rites initiatiques propres à chaque tribu.</p></br>
+          <br><p><b>Les Tribuns :</b> Les Us’aid ne forment pas une nation unifiée, mais les tribus peuvent se rassembler en conseils intertribaux pour régler les conflits ou prendre des décisions d’envergure. Les Tribuns sont élus par leur peuple pour représenter leur tribu lors de ces conseils.</p></br>
+          <br><p><b>Les Voyageurs :</b> Chaque tribu possède un groupe d’individus appelés Voyageurs, capables d’ouvrir les portails mystiques. Ils sont formés dès leur plus jeune âge et possèdent une connexion plus profonde avec la magie des Us’aid.</p></br>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Le Rite de l'Éveil (Naarka'Val) :</b> Chaque jeune Us’aid, lorsqu’il atteint l’âge de conscience (environ 12 à 15 cycles lunaires selon la tribu), doit traverser seul un portail mystique menant à un autre monde. Là, il doit survivre et rapporter un “symbole d’âme” : une plante, un cristal, un fragment d’animal ou une vision spirituelle. Les Guides lisent le symbole pour déterminer la voie spirituelle du jeune : chaman, gardien, conteur, chasseur… L’échec à ce rite ne signifie pas le bannissement, mais la nécessité de réessayer sous une autre forme</p></br>
+      <br><p><b>Le Chant des Lignes Anciennes (Vaar’Saï) :</b> Une fois par cycle d’équinoxe, les Us’aid dressent un cercle de pierres dans un lieu chargé de magie naturelle (souvent des croisements de lignes telluriques). Là, ils chantent pendant toute une nuit pour honorer les anciens de leur tribu, guidés par le Guide ou le Planeur (chamane). La voix est accompagnée d'instruments tribaux et de danses en spirale. Ceux qui tombent en transe peuvent recevoir des visions, considérées comme sacrées.</p></br>
+      <br><p><b>Le Rituel des Deux Lunes (Rya-Karn) :</b> Lorsqu’un Us’aid meurt, son corps est brûlé ou rendu à la terre, selon sa tribu, lorsque les deux lunes de Loor’Kaa se croisent dans le ciel. Un portail est ouvert pour “laisser passer l’âme”. Des fleurs luminescentes sont répandues, et le nom du défunt est chanté jusqu’à l’aube, inscrit dans la mémoire collective de la tribu. Certains Guides affirment pouvoir guider l’esprit vers la réincarnation ou le retour dans la "trame étoilée".</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>Chaque tribu Us'aid possède sa propre apparence, culture et manière de vivre :</p></br>
+      <br><p><b> La Tribu Salkari – 🕊️Les Fils des Vents (Tribu Aviaire)🕊️ :</b></p></br>
+        <br><p><b>•	Apparence :</b> Traits rappelant les rapaces et les oiseaux de proie, avec des plumes recouvrant leur dos et leurs bras. Certains possèdent même de petites ailes atrophiées.</p></br>
+        <br><p><b>•	Culture & Mode de vie :</b> Ils vivent dans les hauteurs, préférant les falaises et les sommets inaccessibles. Ils vénèrent le vent et les cieux, considérant les étoiles comme les guides de leur voyage. Leurs portails sont souvent créés dans des tempêtes.</p></br>
+        <br><p><b>•	Vêtements :</b> Tissus légers et amples, souvent en soie ou en fibres végétales, ornés de plumes colorées symbolisant leur âge et leur statut.</p></br>
+        <br><p><b>• L’Envol du Souffle :</b> Avant de voyager, les membres exécutent une danse au sommet d’un pic ou d’un arbre sacré, les bras levés vers le ciel, invoquant le vent pour choisir la direction du portail.</p></br>
+        <br><p><b> La Tribu Teralis – 🐆Les Crocs de l’Ombre (Tribu Féline)🐆 :</b></p></br>
+        <br><p><b>•	Apparence :</b> Traits félins, avec des yeux perçants, des griffes rétractiles et une souplesse hors du commun. Leur fourrure est souvent sombre, leur permettant de se fondre dans l’obscurité.</p></br>
+        <br><p><b>•	Culture & Mode de vie :</b> Ce sont des chasseurs et des éclaireurs nomades, vivant principalement de la traque et de la furtivité. Leur tradition orale repose sur les récits de chasse et les légendes transmises autour des feux de camp.</p></br>
+        <br><p><b>•	Vêtements :</b> Tuniques ajustées et discrètes, en cuir souple ou en étoffes renforcées, ornées de motifs rappelant les rayures des félins.</p></br>
+        <br><p><b>• Le Miroir de Minuit :</b> Chaque chasseur Teralis doit, une fois dans sa vie, traquer son propre reflet dans une illusion créée par les chamans. Ce duel symbolise la maîtrise de soi, essentielle pour traquer sans devenir une bête.</p></br>
+        <br><p><b> La Tribu Drakari – 🐉Les Héritiers des Flammes (Tribu Reptile)🐉 :</b></p></br>
+        <br><p><b>•	Apparence :</b> Écailles renforcées sur certaines parties du corps, cornes recourbées et une stature imposante. Certains possèdent même des membranes évoquant des ailes.</p></br>
+        <br><p><b>•	Culture & Mode de vie :</b> Ils sont considérés comme les plus anciens et les plus fiers des Us’aid. Leur lien avec le feu et la terre leur confère une sagesse et une patience infinies. Ils vivent dans des sanctuaires cachés, souvent nichés dans des volcans endormis ou des montagnes rocheuses.</p></br>
+        <br><p><b>•	Vêtements :</b> Armures légères faites d’écailles naturelles et de cuir résistant, souvent décorées de gravures et de symboles anciens.</p></br>
+        <br><p><b>• La Veille du Feu Endormi :</b> Lors d’une éruption ou d’une secousse tellurique, les Drakari veillent trois nuits d’affilée près de leur sanctuaire, méditant devant une flamme éternelle. Cela les relie à la colère silencieuse de la planète.</p></br>
+        <br><p><b> La Tribu Syl’Varen – 🦌Les Gardiens de la Forêt (Tribu Cervidée/Herbivore)🦌 :</b></p></br>
+        <br><p><b>•	Apparence :</b> Grands et élancés, avec des bois ou des cornes recourbées, ainsi qu’une fourrure douce et des yeux reflétant une profonde sagesse.</p></br>
+        <br><p><b>•	Culture & Mode de vie :</b> Ce sont les protecteurs des lieux sacrés et des sanctuaires Us’aid. Ils possèdent une grande affinité avec la nature et sont capables de ressentir les énergies des mondes qu’ils visitent.</p></br>
+        <br><p><b>•	Vêtements :</b> Robes tissées à partir de fibres végétales, ornées de feuilles et de perles en bois ou en pierre.</p></br>
+        <br><p><b>• Le Cycle de la Sève :</b> Tous les cinq ans, les Syl’Varen jeûnent et s’isolent durant un mois dans une forêt. Là, ils se connectent aux arbres-anciens, et gravent leur histoire en spirales sur des morceaux de bois vivants.</p></br>
+        <br><p><b> La Tribu Myrr’San – 🐺Les Coureurs du Sable (Tribu Canine)🐺 :</b></p></br>
+        <br><p><b>•	Apparence :</b> Traits évoquant les loups et les chacals, avec une fourrure épaisse adaptée aux environnements arides. Leurs oreilles sont pointues et mobiles, leur conférant une ouïe aiguisée.</p></br>
+        <br><p><b>•	Culture & Mode de vie :</b> Nomades errants à travers les déserts et les plaines rocheuses, ils sont connus pour leur loyauté et leur sens de la meute. Ils ont une tradition de conteurs et de chants, mêlant danse et percussions.</p></br>
+        <br><p><b>•	Vêtements :</b> Tissus amples et légers, enroulés autour du corps pour se protéger du soleil et du sable.</p></br>
+        <br><p><b>• Le Hurlement de l’Éclipse :</b> Lors des éclipses, toute la tribu hurle ensemble au sommet d’un plateau désertique. Ce chant, mêlant voix et tambours, tisse une mémoire collective mystique, transmise oralement depuis des siècles.</p></br>
+        <br><p><b> La Tribu Varr’Tuk – 🐐Les Enfants du Néant (Tribu Satyre/Mystique)🐐 :</b></p></br>
+        <br><p><b>•	Apparence :</b> Pelage sombre, yeux luminescents et cornes recourbées vers l’arrière. Certains possèdent des griffes effilées ou des tatouages lumineux parcourant leur corps.</p></br>
+        <br><p><b>•	Culture & Mode de vie :</b> Ils sont les plus énigmatiques des Us’aid, vivant dans les ombres et se déplaçant uniquement de nuit. Ils sont considérés comme les gardiens des secrets et les maîtres des rituels mystiques.</p></br>
+        <br><p><b>•	Vêtements :</b> Capes sombres et ornements en os ou en métal, avec des tissus chargés de symboles mystiques.</p></br>
+        <br><p><b>• La Marche dans l’Ombre :</b> Chaque Varr’Tuk accomplit un pèlerinage dans un monde obscur, guidé par une lanterne d’os. Là, il ou elle doit affronter une créature symbolique représentant ses peurs ou fautes passées, pour pouvoir “renaître”.</p></br>
+        <br><p><b> La Tribu Veaa - ❄️Les Voix des Steppes (Tribu Mixte)❄️ :</b></p></br>
+        <br><p><b>•	Apparence :</b> Les Veaa n’ont pas d’apparence typique car ils regroupent les membres des diverses autres tribus.</p></br>
+        <br><p><b>•	Culture & Mode de vie :</b> Peuple vivant dans les steppes et la toundra, quiconque peut les rejoindre s’ils réussissent le rite de passage. Ils sont réputés chez les Us’aid comme étant des mercenaires hors pair. Et constituée communément d’entité qui apprennent à évoluer dans des terrains froids.</p></br>
+        <br><p><b>•	Vêtements :</b> Amples et résistants au vent, ils sont souvent colorés et bardés d’ornements en tout genre.</p></br>
+        <br><p><b>• Le Retour du Fil d’Argent :</b>Lorsqu’ils sont en âge, les enfants et les volontaires sont attachés dans la nuit et abandonnés. S’ils retrouvent la caravane avant la prochaine nuit, ils sont acceptés. Sinon, ils sont recueillis par les autres tribus.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Alwas :</b> Partage d’un respect mutuel pour la nature et les traditions nomades. Certains Us’aid commercent avec eux et partagent des légendes.</p></br>
+                <br><p><b>Avec les Bruzas :</b> Amitié profonde et respect des anciens savoirs liés à la terre et aux forces naturelles.</p></br>
+                <br><p><b>Avec les Iweltek :</b> Relation complexe entre la magie et la science. Les Us’aid voient les Iweltek comme des esprits curieux mais trop détachés du monde naturel.</p></br>
+                <br><p><b>Avec les Zel :</b> Méfiance envers l’Empire Zel, les Us’aid les considérant comme des conquérants cherchant à dominer plutôt qu’à comprendre.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Magie Naturelle :</b> Ils manipulent les éléments naturels grâce à une magie ancienne, leur permettant de contrôler le vent, la terre ou la végétation.</p></br>
+                <br><p><b>Voyage par Portails :</b> Ils peuvent ouvrir des passages dimensionnels pour voyager instantanément sur de longues distances.</p></br>
+                <br><p><b>Adaptabilité Physique :</b> Leur apparence animale leur confère des sens aiguisés, de l'agilité et une force exceptionnelle.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Saidu</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Loor’Kaa</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Nomade</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 100 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 40%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 80%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 30%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="bruzas" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360548701612933180/c724f287d30e51461ded5d24a034e19b.jpg?ex=67fb8538&is=67fa33b8&hm=fe7e60176ce132dd147006f727681549dd61a6cfde74b8ab0f9cd19a54161d5c&=&format=webp');--annexe_nc:#d16d10;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Solitaire<br>Protecteur</div>
+              <div>Les Bruzas</div>
+          </div>
+          <br>
+          <p>Les Bruzas sont une race ancestrale d’êtres massifs constitués de pierre vivante et de gemmes cristallines. Profondément liés à leur monde, ils possèdent une capacité innée de terraformation, leur permettant de façonner la roche avec une précision inégalée. Grâce à ce don, ils ont érigé des cités souterraines majestueuses, où l’architecture minérale atteint des sommets de perfection artistique et fonctionnelle. Par nature ermites et secrets, les Bruzas préfèrent l’isolement, restant entre eux pour préserver leurs traditions et leur mode de vie millénaire. Leur société est rigide et hiérarchisée, fondée sur le respect des anciens, considérés comme les gardiens du savoir et de la pierre.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Les Bruzas croient que la pierre possède une mémoire, et que chaque formation rocheuse détient un fragment de l’histoire de l’univers. Ils pratiquent une forme de géomancie sacrée, leur permettant de communiquer avec la roche et de lire le passé gravé dans la terre. Ils ne croient pas aux dieux traditionnels, mais à l’Âme de la Terre, une entité diffuse qui veille sur l’équilibre du monde souterrain. “Tout ce qui existe retourne un jour à la pierre.” — Sagesse Bruzas</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p>Les Bruzas ne dépendent pas de la technologie conventionnelle, mais de leur capacité innée à manipuler la pierre et les minéraux.</p></br>
+      <br><p><b>Structures Cristallines :</b> Leurs cités sont taillées dans des cavernes gigantesques, où la lumière est diffusée par d’immenses cristaux luminescents, captant l’énergie des profondeurs.</p></br>
+      <br><p><b>Forge Minérale :</b> Ils sculptent leurs armes et outils dans des gemmes enchantées, rendant chaque objet à la fois précis, durable et imprégné d’une mémoire ancienne.</p></br>
+      <br><p><b>Transmission du Savoir :</b> Plutôt que d’écrire, les Bruzas enregistrent leur histoire et leur sagesse dans la pierre elle-même, créant des stèles vivantes capables de retransmettre leurs connaissances à ceux qui savent les écouter.</p></br>
+      <br><p><b>Régénération Minérale :</b> Blessés, les Bruzas peuvent se réparer en absorbant les minéraux autour d’eux, renforçant leur corps avec la pierre environnante.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>Les Bruzas ne sont ni expansionnistes ni belliqueux, mais leur mode de vie souterrain et leur rapport à la terre en font une civilisation unique, basée sur l’harmonie avec la pierre et le respect des traditions.</p></br>
+      <br><p><b>Le Parle-Terre : L’Ancien </b> À la tête du peuple Bruzas se trouve le Parle-Terre, un chef millénaire dont l’esprit est en connexion permanente avec les profondeurs du monde. Choisi parmi les plus anciens et les plus sages, le Parle-Terre n’impose pas son pouvoir par la force, mais par son lien avec la pierre elle-même, qui lui transmet les secrets du monde souterrain. On raconte que le Parle-Terre peut écouter les murmures des pierres, percevoir les mouvements tectoniques et comprendre les secrets gravés dans la roche par les âges.</p></br>
+      <br><p><b>Les Modeleurs : Les Maîtres de la Terre</b> Les Modeleurs sont les artisans et architectes du peuple Bruzas. Ils possèdent le don de terraformation, leur permettant de manipuler la pierre brute pour en faire des structures, des armes, des ornements ou même des conduits d’énergie souterraine. Les Modeleurs sont vénérés, car sans eux, les cités souterraines des Bruzas ne pourraient exister. Chaque Modeleur passe des siècles à perfectionner son art, sculptant la roche par la simple force de sa volonté, sans avoir besoin d’outils.</p></br>
+      <br><p><b>Les Gardiens des Profondeurs :</b> Bien que les Bruzas ne soient pas guerriers, ils possèdent une caste de Gardiens, chargée de protéger les tunnels sacrés et les frontières de leur territoire. Leur peau minérale leur confère une résistance exceptionnelle, et leur maîtrise de la pierre leur permet de piéger les intrus en manipulant l’environnement à leur avantage. Les Gardiens n’utilisent que très peu d’armes, préférant sceller les intrus vivants dans la pierre ou déstabiliser le terrain pour rendre toute attaque impossible.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Thra’Kyl :</b> Un respect mutuel existe entre les deux peuples, tous deux fascinés par les matériaux organiques et minéraux. Les Thra’Kyl admirent l’art des Modeleurs, tandis que les Bruzas reconnaissent la résilience et la sagesse primitive des Thra’Kyl.</p></br>
+                <br><p><b>Avec les Us’aid :</b> Amitié sincère entre ces deux races, car les Bruzas respectent la nature autant que les Us’aid. Malgré leur isolement, ils acceptent les Us’aid comme des égaux et échangent parfois des secrets sur l’équilibre entre la roche et la flore.</p></br>
+                <br><p><b>Avec les Zorok :</b> Méfiance extrême, due à d’anciens conflits territoriaux. Les Zorok ont tenté, par le passé, d’exploiter les ressources des Bruzas et de les réduire en esclavage, mais ont échoué face à la résistance minérale de ces derniers. Aujourd’hui, les relations restent hostiles et distantes.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Terraformation :</b> Ils peuvent modifier la structure de la roche et du sol, créant des tunnels ou fortifications en quelques instants.</p></br>
+                <br><p><b>Durabilité Extrême :</b> Leur corps minéral est presque indestructible, résistant aux impacts, à la chaleur et aux radiations.</p></br>
+                <br><p><b>Hibernation Souterraine :</b> Ils peuvent entrer dans un état d'hibernation pour économiser de l'énergie pendant des siècles.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Tharnak</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Gor’Mahr</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Isolationiste</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 5000 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 30%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 70%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 20%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="zel" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360549976589078538/image.png?ex=67fb8668&is=67fa34e8&hm=bd5f7943667e242a3951fe7af9c19c92ea76715cf6d952aa7533231afb187073&=&format=webp&quality=lossless');--annexe_nc:#1e3b9c;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Religion<br>Domination</div>
+              <div>L'Empire Zel</div>
+          </div>
+          <br><p>L’Empire Zel est un colosse théocratique, à la fois machine de guerre, institution religieuse et empire administratif. Son organisation mélange inquisition fanatique, expansion militaire et impérialisme culturel, à l’image des grandes civilisations conquérantes de l’Antiquité, notamment Rome. La société Zel est entièrement tournée vers la conquête et la conversion. Son fonctionnement repose sur trois piliers fondamentaux :</p></br>
+          <br><p><b>La Foi :</b> La doctrine de l’Empereur-Dieu est absolue. Toute pensée dissidente est une hérésie.</p></br>
+          <br><p><b>La Guerre Sainte :</b> Les Légions Célestes portent la lumière de l’Empire aux races inférieures.</p></br>
+          <br><p><b>La Civilisation :</b> Une fois assimilées, les populations vaincues deviennent des citoyens impériaux sous un système strict de hiérarchisation.</p></br>
+          
+          <h2>La Guerre Sainte : Un Mode de Vie</h2>
+          <p>L’Empire Zel vit en état de guerre perpétuel. Chaque Zel doit passer plusieurs années dans l’armée, en tant que soldat ou auxiliaire. Les croisades sont fréquentes, souvent lancées pour convertir ou soumettre des civilisations voisines. Les mondes conquis deviennent des provinces impériales, gouvernées par un Proconsul, chargé de “civiliser” les populations locales. Les campagnes militaires sont vues comme des devoirs spirituels, et mourir au combat garantit une place auprès de l’Empereur-Dieu dans l’au-delà.</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Le Baptême de l’Empire (Zar’Enth)</b> À l’âge de 5 cycles solaires, chaque enfant est présenté au temple local. Une prêtresse Vrejehim déclare son affiliation astrale. Un serment de silence est observé pendant 24 heures. L’enfant reçoit une goutte de larmes sanctifiées sur le front. Ce rite officialise son entrée dans la communauté impériale.</p></br>
+      <br><p><b> La Flamme du Zénith :</b> Tous les citoyens doivent prouver leur valeur au combat. Ils déposent une prière dans un brasero sacré. Si la flamme devient blanche, ils sont bénis. Si elle devient rouge, ils doivent prouver leur foi au combat. Ceux qui échouent sont envoyés dans les unités de pénitence. Ceux qui réussissent intègrent les Légions Célestes ou les Chapelles Militaires.</p></br>
+      <br><p><b>L’Ascension des Vertueux :</b> Une fois par an, chaque monde impérial organise une grande procession où l’on porte des représentations géantes de l’Empereur-Dieu. Des sacrifices symboliques (généralement de mannequins ou de statues hérétiques) sont brûlés. Les vétérans de croisades sont bénis. Les nouveaux citoyens reçoivent leur premier verset sacré gravé sur une plaque de métal, portée sur leur poitrine.</p></br>
+      <br><p><b>La Purgation des Hérétiques (Ner’Talash) :</b> Lorsqu’un monde refuse la conversion, ou lorsqu’un mouvement hérétique apparaît, les Inquisiteurs Zel organisent une purgation rituelle. Les hérétiques sont “offerts au Jugement” dans les arènes. Chaque exécution est précédée de chants sacrés et d’hymnes de pénitence. Des cendres bénies sont ensuite dispersées sur le lieu, considéré purifié. </p></br>
+
+      <h2>Organisation Politique et Religieuse : Un Empire Théo-Militaire</h2>
+      
+      <br><p><b>L’Empereur-Dieu : Le Pontifex Maximus de l’Empire</b> L’Empereur-Dieu est l’incarnation vivante du Divin, son autorité est à la fois absolue et incontestable. Il est l’égal d’un dieu vivant, un souverain qui ne peut être remis en question. Il délègue rarement le pouvoir directement, préférant gouverner par des édits sacrés transmis par les Vrejehim, l’ordre religieux féminin qui administre l’Empire. Son image est présente dans chaque ville, sous forme de statues titanesques ou de fresques gravées dans le marbre et l’or. L’Empereur-Dieu ne meurt jamais officiellement. Lorsqu’un dirigeant Zel décède, son essence est “réincarnée” dans un nouveau corps choisi par les Vrejehim, perpétuant ainsi le mythe de son immortalité.</p></br>
+      <br><p><b>Les Vrejehim : Le Sénat Céleste et Gardiennes du Dogme</b> Les Vrejehim jouent un rôle similaire à un sénat religieux, formant le véritable gouvernement de l’Empire. Elles administrent les lois, l’armée, et la bureaucratie en son nom. Leur mission principale est de maintenir l’orthodoxie de la foi, éliminant toute corruption ou dissidence. Elles contrôlent les rites impériaux et la succession de l’Empereur-Dieu. Les Vrejehim sont regroupées en différents ordres, chacun ayant une fonction spécifique :</p></br>
+      <br><p><b>•	Les Gardiennes du Verbe :</b> Elles rédigent les textes sacrés et définissent la doctrine.</p></br>
+      <br><p><b>•	Les Censeurs de la Foi :</b>  Elles traquent les hérésies et supervisent les Inquisiteurs.</p></br>
+      <br><p><b>•	Les Augures :</b> Elles conseillent l’Empereur-Dieu, interprétant les signes divins.</p></br>
+      <br><p>Elles forment l’organe administratif le plus puissant de l’Empire, un mélange entre le Sénat romain et l’Église médiévale.</p></br>
+      <br><p><b>Les Inquisiteurs : La Terreur Sacrée</b> L’Inquisition Zélienne est le bras armé du dogme, une police secrète et militaire vouée à purger les hérétiques et maintenir l’ordre religieux. Ils ont droit de vie et de mort sur tout citoyen impérial. Leur juridiction est illimitée, pouvant traquer un dissident à travers toute la galaxie. Ils opèrent seuls ou en petits groupes, souvent assistés de soldats fanatiques et de machines de guerre sacrées. Les Inquisiteurs sont redoutés même au sein de l’Empire, et leur venue est souvent le présage de purges massives et de répressions brutales.</p></br>
+
+      <h2>Le Système Militaire : Les Légions Célestes</h2>
+      <br><p>L’expansion de l’Empire Zel repose sur une armée disciplinée et organisée, calquée sur le modèle des légions romaines, combinée à une idéologie de croisade permanente.</p></br>
+        <br><p><b>Les  Célestes : L’Imperium Belliqueux :</b> L’armée impériale est divisée en Légions Célestes, composées de centaines de milliers de soldats, chacune ayant sa spécialisation.</p></br>
+        <br><p><b>•	Les Chapitres Solaires :</b> L’élite des troupes impériales, formée d’anciens nobles et vétérans de guerre.</p></br>
+        <br><p><b>•	Les Chapitres du Zénith :</b> Troupes fanatiques, prêtes à se sacrifier en masse pour l’Empereur-Dieu.</p></br>
+        <br><p><b>•	Les Prétoriens Sacrés :</b> La garde personnelle de l’Empereur, composée de guerriers “immortels” et de champions “divins”.</p></br>
+        <br><p>Chaque Légion dispose de machines de guerre colossales, des “Engins de la Foi”, titanesques machines construites dans les forges impériales, gravées de glyphes et d’écritures saintes.</p></br>        
+
+          <h2>Organisation Sociale : Hiérarchie et Assimilation</h2>
+      <br><p>La société Zel fonctionne comme une structure pyramidale, où chaque individu a un rôle bien défini.</p></br>
+      <br><p><b>La Noblesse Impériale : L’Aristocratie de la Foi</b> Les nobles Zel sont les descendants des premiers conquérants de l’Empire, occupant les postes clés du gouvernement, de l’armée et de l’Inquisition. Ils vivent dans des villes-palais, décorées de fresques et de statues à la gloire impériale. Ils financent les temples et les légions, augmentant leur prestige et leur influence.Certains deviennent “Grands Croisés”, commandant des armées et menant des campagnes d’expansion.</p></br>
+      <br><p><b>Les Citoyens : Les Convertis Modèles</b> Les citoyens impériaux sont ceux qui adhèrent pleinement à la foi impériale. Seuls les Zel de naissance peuvent être des citoyens de plein droit. Les populations conquises doivent passer par un processus d’assimilation pour obtenir la citoyenneté. Les citoyens bénéficient de privilèges politiques, économiques et militaires, contrairement aux sujets impériaux.</p></br>
+      <br><p><b>Les Sujets Impériaux : Les Populations Conquises</b> Les mondes annexés à l’Empire sont peuplés de sujets impériaux, n’ayant aucun droit politique tant qu’ils n’embrassent pas la foi impériale. Ils doivent payer un tribut et fournir des soldats pour les croisades. Ils vivent sous un régime de lois militaires, sous la supervision d’un Proconsul impérial. Ils doivent se convertir ou vivre comme des citoyens de seconde zone.</p></br>
+      <br><p><b>Les Hérétiques et Rebelles : Le Destin des Impies</b> Ceux qui refusent la conversion sont traqués, purgés ou réduits en esclavage. Les prisonniers  impériaux servent dans les mines, les forges sacrées ou comme chair à canon. Certains sont envoyés dans les arènes impériales, où ils meurent pour divertir la noblesse et prouver la gloire de l’Empire.</p></br>
+    </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Vrun :</b> Les Vrun et les Zel se livrent une guerre idéologique et militaire depuis des siècles. Les Vrun voient les Zel comme des tyrans religieux, cherchant à écraser toute liberté spirituelle. Les Zel voient les Vrun comme une abomination, un peuple refusant la lumière divine et choisissant l’obscurité de leur Archi-Reine. Chaque affrontement entre ces deux factions est un choc total, opposant une théocratie impériale à une dictature militariste.</p></br>
+                <br><p><b>Avec les Iweltek :</b> Les Iweltek, civilisation avancée et axée sur la science et la technologie, sont en conflit philosophique avec les Zel. Les Iweltek prônent la raison et le progrès, tandis que les Zel imposent la foi et l’obéissance. Les deux peuples se méprisent, mais évitent généralement le conflit direct, préférant lancer des campagnes d’influence et d’espionnage.</p></br>
+                <br><p><b>Avec les Hédrakans :</b> Les Hédrakans, bien que neutres, entretiennent des relations commerciales lucratives avec l’Empire Zel. Les Hédrakans fournissent des ressources et des marchandises précieuses, en échange de quoi les Zel leur garantissent des protections divines et des exemptions religieuses. Une certaine méfiance subsiste, car les Hédrakans refusent d’adopter la foi impériale.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Longévité et Endurance :</b> Leur espérance de vie millénaire leur confère une sagesse et une patience stratégiques inégalées.</p></br>
+                <br><p><b>Bénédiction Divine :</b> Certains membres de l'élite sont capables d'invoquer des boucliers énergétiques ou de soigner les blessures légères par “la foi”.</p></br>
+                <br><p><b>Autorité Charismatique :</b> Leur présence et leur prédisposition à une beauté naturelle impose naturellement le respect, influençant les foules et facilitant la diplomatie.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Zelarith</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Zel’Rath</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Théocratie Militaire</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 2000 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 90%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 100%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="vrun" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360554014806245406/image.png?ex=67fb8a2b&is=67fa38ab&hm=b783255cfb85deba26eb9b57806622c6a1f25becdfe0ec5c6c2700fdd57931b5&=&format=webp&quality=lossless');--annexe_nc:#810303;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Expansionniste<br>Belliqueux</div>
+              <div>Le Front de Libération de Vrun</div>
+          </div>
+          <br>
+          <p>Race humanoïde à la peau pâle, bleutée, parfois rougeâtre ou jaune, avec des cornes proéminentes le plus souvent, le Front de Libération de Vrun est une puissance militaire expansionniste. Se présentant comme les “libérateurs des opprimés”, ils n’hésitent pas à utiliser la force pour imposer leur vision de la justice. Leurs membres portent presque toujours une armure imposante, conçue pour le combat et la résistance aux projectiles. Ce régime fonctionne comme une machine d’expansion, avec une noblesse guerrière, un culte du mérite strict, et une bureaucratie dirigée par une élite martiale et administrative. Chez les Vrun, tout citoyen est un soldat potentiel, et l’Empire est en perpétuelle mobilisation, prêt à déclencher une guerre à tout moment.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <br><p><b>Le Service Militaire Obligatoire :</b> Tout citoyen Vrun doit servir dans l’armée pendant au moins 10 ans. Ceux qui se distinguent peuvent accéder à des grades supérieurs ou devenir administrateurs. Les lâches et déserteurs sont exécutés sans procès. L’armée est l’épine dorsale de la société et la conscription massive permet d’alimenter une force de guerre colossale.</p></br>
+      <br><p><b>Une Économie de Guerre Planifiée :</b> L’économie Vrun fonctionne comme une usine à produire des soldats et des armes. L’État contrôle directement les ressources. Les territoires conquis sont immédiatement transformés en centres de production et de conscription. Les technologies étrangères sont assimilées et perfectionnées, notamment grâce aux échanges avec les Hedrakans. L’Empire Vrun ne produit rien qui ne serve pas la guerre.</p></br>
+      <br><p><b>L’Expansion : Une Doctrine de Fer et de Sang :</b> Les Vrun ne se considèrent pas comme des conquérants classiques, mais comme des libérateurs brutaux. “Les faibles et les opprimés doivent être sauvés. Nous leur apportons l’ordre.” Leur vision de la conquête est férocement pragmatique, combinant stratégie, brutalité et une discipline de fer. Chaque génération doit gagner ses propres guerres. Les Vrun ne cessent jamais d’expansionner, convaincus que la stagnation est synonyme de déclin. Chaque conquête est immédiatement militarisée, et les populations locales sont intégrées soit comme soldats, soit comme fonctionnaires.</p></br>
+      <br><p><b>La Terreur Comme Arme Politique :</b> Les élites des peuples conquis sont systématiquement exécutées. Les villes rebelles sont rasées, les dissidents massacrés. La peur est un outil de gouvernance, assurant une soumission totale des territoires dominés.</p></br>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Le Serment de la Lame Obéissante (Zhaarn'Taal) :</b> Tout guerrier promu à un commandement militaire ou administratif doit prêter le Serment de la Lame : un vœu de loyauté jusqu’à la mort. Il ou elle trempe son arme dans un bassin de sang rituel, symbolisant l’abandon du soi au service de l’Ordre. Ensuite, l’arme est scellée avec une chaîne de fer qu’il ne pourra briser que sur ordre de l’Archi-Reine. Briser ce serment sans autorisation est puni par l'exécution publique sans procès.</p></br>
+      <br><p><b>Le Rite des Cuirasses Brisées (Kael’Zarr) :</b> Les corps des Vrun morts au combat sont exposés dans leurs armures fendues, symbole de leur dernière lutte. On brise leur arme sur leur torse, puis leurs restes sont incinérés dans une forge de guerre. Leurs cendres sont intégrées dans les fondations d’un nouveau bastion ou dans les munitions d’une arme sacrée. Chaque cérémonie est accompagnée d’un chant de guerre funèbre, récité par les Khaal’Zarr eux-mêmes.</p></br>
+      <br><p><b>Le Tournoi de l'Épreuve Totale (Tharn’Vael) :</b> Les meilleurs guerriers de l’Empire participent à des épreuves sanglantes sur Vrun-Kaal. Les épreuves incluent : Simulation de conquête de bastion, Course en zone toxique, Stratégie en temps réel face à des généraux anonymes. Le gagnant est souvent promu à la tête d’un nouveau front d’expansion.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p><b>L’Archi-Reine : L’Incontestable Flamme de la Conquête :</b> L’Archi-Reine est l’incarnation vivante de l’Ordre Divin, une souveraine omnisciente et omnipotente selon la doctrine Vrun. Elle tient son pouvoir d’une force surnaturelle, qui lui permet de marquer et de bénir ses guerriers, leur accordant des capacités extraordinaires. Elle est l’incarnation de la force et de l’ordre, considérée comme l’autorité suprême dont la volonté ne peut être contestée. Son pouvoir est héréditaire, mais seul un dirigeant digne peut revendiquer le trône. Elle est à la fois chef militaire, politique et spirituel : elle nomme les généraux, supervise les affaires d’État, et impose la doctrine impériale. Son règne est soutenu par un réseau d’espions, de conseillers militaires et d’intendants, elle concentre tout le pouvoir entre ses mains.</p></br>
+      <br><p><b>La Garde des Vrun (Khaal’Zarr) : Les Généraux Suprêmes</b> Ces guerriers sont les plus puissants serviteurs de l’Archi-Reine, chacun ayant reçu une bénédiction unique. Ils portent un titre distinctif, souvent lié à une vertu guerrière (Ex : “L’Implacable”, “Le Jugement”, “La Fureur”). Leur puissance est inégalée, et leurs décisions sur le champ de bataille sont absolues. Ils dirigent les Forces Impériales, menant les armées du Front à la conquête de nouveaux mondes.</p></br>
+      <h3>Une Noblesse Guerrière et Bureaucratique</h3>
+      <br><p>La société Vrun est dominée par une aristocratie militaire, où seuls ceux qui servent l’Empire par la guerre et l’administration accèdent au pouvoir.</p></br>
+      <br><p><b>Les Vrek’Thaan : Les Seigneurs de Guerre Nobles</b> Chaque général de l’Empire est un noble, un Vrek’Thaan, détenteur d’un fief militaire. Leur rôle ne se limite pas au combat : ils gèrent les territoires, collectent les impôts et supervisent les industries de guerre. Ils se disputent constamment la faveur de l’Archi-Reine, formant un réseau de rivalités et d’alliances politiques.</p></br>
+      <h3>Une Bureaucratie Omniprésente</h3>
+      <br><p><b>Les Vrun-Kael : Les Administrateurs</b> Ce sont des bureaucrates militaires, chargés de la logistique, du renseignement et de la conscription. Tout dans l’Empire est organisé comme une armée, et la discipline est impitoyable. Ils imposent une planification rigide. Le fonctionnement de l’Empire est à la fois un État-major et une administration : chaque ville fonctionne comme une garnison, et chaque citoyen est un rouage de la machine impériale.</p></br>
+      <h2>Une Société Militaire et Hiérarchisée</h2>
+      <br><p>Dans l’Empire Vrun, chaque individu a un rôle précis, et les classes sociales sont organisées selon un système strict.</p></br>
+      <br><p><b>L’Archi-Reine : Monarque absolu.</p></br></b>
+      <br><p><b>Les Khaal’Zarr (Généraux et Seigneurs de Guerre) : Elite des Vrun, plus haute distinction possible dans la nation.</p></br></b>
+      <br><p><b>Les Vrek’Thaan : Bureaucrates et administrateurs de guerre.</p></br></b>
+      <br><p><b>Les Vrun’Kael : Noblesse impériale et gouverneur des territoires.</p></br></b>
+      <br><p><b>Les Conscrits et Travailleurs Militarisés : Population laborieuse et soldats en formation.</p></br></b>
+      <br><p><b>Les Conquis : Prisonniers de guerre et peuples « libérés ».</p></br></b>
+      </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Zel :</b> La rivalité entre les Vrun et les Zel est idéologique, politique et militaire. Les deux civilisations prétendent incarner l'ordre suprême, mais leurs fondements sont opposés. Les Zel prônent la foi impériale, les Vrun imposent la force rationnelle. Chaque affrontement est une guerre totale, où la reddition est impossible. Les Vrun considèrent les Zel comme des fanatiques aveuglés par une théocratie décadente, à “libérer de leurs chaînes divines”. Les batailles entre eux sont appelées "Purges de Dogme" dans les archives militaires Vrun. </p></br>
+                <br><p><b>Avec les Hédrakans :</b> Les Vrun respectent la neutralité des Hédrakans uniquement parce qu’ils sont les meilleurs fournisseurs d’armes, d’exotique et d’informations. Ils échangent souvent technologies de guerre, esclaves exotiques et ressources stratégiques. Mais ils restent sous surveillance constante, les Vrun détestant leur manque de loyauté idéologique. Des opérations secrètes sont souvent menées pour voler leurs secrets industriels. </p></br>
+                <br><p><b>Avec les Zorok :</b> Les Zorok sont l’une des rares races que les Vrun ne méprisent pas ouvertement. Ils respectent leur sens de la hiérarchie, leur efficacité industrielle, et leur culture de la domination. Certains Zorok servent comme mercenaires ou commandants auxiliaires dans des campagnes Vrun. Cependant, les tensions demeurent : les Vrun considèrent leur dépendance aux castes comme une faiblesse stratégique.</p></br>
+                <br><p><b>Avec les Xeds :</b> Les Vrun les utilisent parfois comme réparateurs, cartographes ou unités logistiques, mais refusent de les considérer comme “vivants”. Ils ont tenté de hacker leur réseau, sans succès. Certains commandants essayent de les utiliser comme boucliers ou pions sacrifiables sur le champ de bataille.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Force Martiale :</b> Leurs armures sont équipées de systèmes de survie et d’armes intégrées, augmentant leur puissance de combat.</p></br>
+                <br><p><b>Rage de Combat :</b> En situation de danger, ils peuvent entrer dans un état de frénésie, ignorant la douleur et augmentant leur force.</p></br>
+                <br><p><b>Tactiques de Guerre :</b> Leur entraînement militaire rigoureux en fait des stratèges redoutables, capables d'exploiter les faiblesses de leurs ennemis.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Vrukhenn</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Vrun-Kaal</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Impériale et Expansionniste</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 500 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 90%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 10%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="hedrakans" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360639453105881271/image.png?ex=67fbd9bd&is=67fa883d&hm=053cae99cf366462c027b9b68b0536e131df75251dc2f29806f02cb6d429fca5&=&format=webp&quality=lossless');--annexe_nc:#6956bd;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Commerce<br>Echanges</div>
+              <div>La Corporation des Hédrakans</div>
+          </div>
+          <br>
+          <p>Les Hédrakans sont une race extraterrestre pragmatique et avide de profit, où chaque relation est une opportunité commerciale. Ils ont bâti un empire économique en vendant des technologies rares, des artefacts anciens et des biens de luxe, se positionnant en intermédiaires neutres entre les grandes puissances galactiques. Leur société repose sur une hiérarchie marchande stricte, où la richesse, l’influence et la capacité à négocier définissent le statut. Si une guerre éclate, les Hédrakans ne prennent jamais parti, préférant vendre armes et renseignements aux deux camps, tant que cela leur profite.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Les Hédrakans sont de grande taille, avec un crâne volumineux qu’ils considèrent comme le symbole de l’intelligence. Leur peau est souvent d’un ton doré ou cuivré, et leurs yeux sont dotés de pupilles fendues, leur donnant un regard perçant et calculateur. Leur style vestimentaire est opulent : Tissus brodés de fils métalliques. Bijoux intégrés dans leurs vêtements, souvent des plaques d’or ou de platine. Épaulettes et colliers massifs, signes de statut. Chaque Hédrakan arbore un sceau personnel sur son vêtement ou sa peau, symbolisant sa maison marchande et ses réussites commerciales. Ils méprisent les démonstrations de force brute, préférant les manœuvres subtiles, les négociations et la manipulation économique. Si l’univers est un échiquier de grandes puissances guerrières, les Hédrakans sont ceux qui vendent les pièces et le plateau. Leur influence dépasse celle des empires militaires, car aucune guerre ne peut être menée sans ressources, et aucune paix ne peut être signée sans transactions. Leur arme la plus redoutable n’est pas un vaisseau de guerre, mais un simple contrat signé, car un Hédrakan sait qu’une dette bien placée vaut mille canons.</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Le Code du Commerce : Une Loi Sacro-Sainte</b> Les Hédrakans ne croient ni en dieux ni en empires, mais le Code du Commerce est leur religion. Il repose sur trois principes fondamentaux :</p></br>
+      <br><p><b>1. Un contrat signé est sacré. Violer un accord est la pire trahison.</b></p></br>
+      <br><p><b>2. La neutralité est la clé de la longévité. Un Hédrakan ne prend jamais parti dans un conflit</b></p></br>
+      <br><p><b>3. Tout peut être vendu, même le temps et l’information.</b></p></br>
+      <br><p>Ce Code régule toutes les interactions et garantit la confiance dans leurs affaires.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p><b>Société et Organisation : Un Empire Tissé de Contrats</b> La Corporation des Hédrakans n’est ni une nation classique ni un empire militaire : c’est un conglomérat gigantesque, où chaque Hédrakan est un commerçant, un banquier ou un entrepreneur.</p></br>
+      <br><p><b>Le Souverain des Négociants : La Voix de la Prospérité</b> Le Souverain des Négociants est une figure plus symbolique que politique. Il ne règne pas mais incarne la continuité de la tradition commerciale. Son rôle est de garantir l’équilibre des affaires, d’arbitrer les conflits entre marchands et de représenter la Corporation auprès des autres factions. Il ne détient aucun pouvoir militaire, mais son influence est immense, car sa parole peut faire basculer des économies entières.</p></br>
+      <br><p><b>Le Cercle des Exarques : L’Oligarchie du Profit</b> Le véritable pouvoir réside dans le Cercle des Exarques, un conseil de douze marchands influents, chacun à la tête d’un secteur clé de l’économie Hédrakane :</p></br>
+      <br><p><b>• Technologie et ingénierie</b></p></br>
+      <br><p><b>• Commerce militaire et vente d’armes</b></p></br>
+      <br><p><b>• Espionnage et renseignements</b></p></br>
+      <br><p><b>• Marchés d’artefacts et objets rares</b></p></br>
+      <br><p><b>• Industrie du luxe et des biens de prestige</b></p></br>
+      <br><p><b>• Commerce énergétique et exploitation minière</b></p></br>
+      <br><p><b>• Commerce des ressources organiques et biologiques</b></p></br>
+      <br><p><b>• Banques et investissements interstellaires</b></p></br>
+      <br><p><b>• Marché des transports et logistique</b></p></br>
+      <br><p><b>• Commerce médical et pharmaceutique</b></p></br>
+      <br><p><b>• Contrats d’assistance et mercenariat économique</b></p></br>
+      <br><p><b>• Commerce des mondes indépendants</b></p></br>
+      <br><p>Chaque Exarque gouverne un district économique sur Hedrakka Prime, et les rivalités internes sont féroces.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Iweltek :</b> Un partenariat technologique très lucratif, où les Hédrakans jouent le rôle d’intermédiaires dans la diffusion des innovations scientifiques des Iweltek.</p></br>
+                <br><p><b>Avec les Vrun :</b> Vente d’armes et de mercenaires, sans jamais s’impliquer politiquement.</p></br>
+                <br><p><b>Avec les Zel :</b> Relations prudentes. Les Hédrakans méprisent le dogmatisme religieux, mais le commerce des reliques et objets sacrés est florissant.</p></br>
+                <br><p><b>Avec les Zorok :</b> Conflits d’intérêts constants, car les Zorok préfèrent l’exploitation directe à la négociation.</p></br>
+                <br><p><b>Avec les Us'aid :</b> Commerce de biens artisanaux et de produits issus de la nature, sans exploitation directe de leurs ressources, ce qui maintient des relations cordiales.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Négociation et Persuasion :</b> Ils sont maîtres de la diplomatie et de la manipulation, capables de convaincre même leurs ennemis de faire affaire.</p></br>
+                <br><p><b>Marchandage Instinctif :</b> Leur intuition leur permet d’évaluer instantanément la valeur d’un objet ou d’une personne.</p></br>
+                <br><p><b>Réseau Commercial Étendu :</b> Leur influence s'étend à travers la galaxie, leur permettant d'accéder à des ressources rares et précieuses.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : l'Hédraïk</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Hedrakka Prime</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Corporations</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 250 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 100%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 00%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 00%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="shalkari" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360639345664589844/image.png?ex=67fbd9a3&is=67fa8823&hm=84da2f0d1ccb5a636fb6ffaa61a785dd50db64a36ef51315be0614f91aec332b&=&format=webp&quality=lossless');--annexe_nc:#803b91;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Emotions<br>Ombre & Lumière</div>
+              <div>Les Shal’Kari</div>
+          </div>
+          <br>
+          <p>Les Shal’Kari sont une race extraterrestre unique, semi-éthérée, composés d'ombre semi-éthérée et de gaz luminescents. Ils ne possèdent ni chair ni sang, et leur corps translucide est traversé par des éclairs d’énergie pure, changeant de couleur en fonction de leurs émotions et de leur état de santé. Ils sont profondément liés aux flux énergétiques cosmiques, puisant leur force dans les étoiles et les sources thermiques naturelles. Non-violents de nature, ils n’interviennent jamais directement dans les conflits, mais leurs Gardiens de l’Aube sont capables de manipuler l’énergie brute en tant qu’arme si nécessaire. Leur société est fondée sur l’harmonie et la communication télépathique, fonctionnant par un consensus collectif, sans hiérarchie stricte. Si l’univers est dominé par les empires et les conflits, les Shal’Kari sont les gardiens invisibles de l’équilibre cosmique. Ils n’ont pas de vaisseaux militaires, mais leurs sanctuaires peuvent générer des barrières énergétiques impénétrables. Ils ne possèdent pas de richesses, mais peuvent manipuler des forces qui dépassent la compréhension matérielle. Ils ne dominent pas, mais leur simple présence peut faire évoluer les civilisations vers une nouvelle compréhension de l’énergie et de la lumière. Si un jour les Shal’Kari choisissaient de se battre, leur maîtrise de l’énergie pure pourrait changer le destin des étoiles elles-mêmes.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Les Shal’Kari sont des êtres semi-transparents, dont le corps minéral est parcouru d’éclats de lumière changeants. Leur forme varie légèrement selon leur âge, certains étant plus cristallins, d’autres plus gazeux. Leur visage est une plaque de cristal sans traits, mais ils projettent des formes lumineuses pour exprimer leurs pensées. Leurs couleurs d’énergie fluctuent en fonction de leurs émotions :</p>
+          <br><p><b>• Bleu doux :</b> Sérénité</p></br>
+          <br><p><b>• Violet intense :</b> Concentration</p></br>
+          <br><p><b>• Rouge pulsant :</b> Alerte / stress</p></br>
+          <br><p><b>• Blanc pur :</b> Connexion au Nexus</p></br>
+          <br><p>Leur communication repose sur des pulsations lumineuses et des fréquences sonores, une sorte de musique visuelle et auditive qui sert à la fois de langage et de transmission émotionnelle.</p></br>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Célébration des Étoiles : Une Religion sans Dieux</b> Les Shal’Kari ne vénèrent aucun être divin, mais considèrent les étoiles comme des entités vivantes, des gardiens cosmiques qui influencent le flux de l’existence.</p></br>
+      <br><p><b>Fondation Célestes :</b> Ils construisent des sanctuaires lumineux, qui brillent comme des nébuleuses visibles depuis l’espace, servant de points de convergence énergétique.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>Les Shal’Kari ne fonctionnent pas selon un système de gouvernement classique, mais à travers une intelligence collective, où chaque individu apporte ses pensées et ressentis pour former un Nexus de conscience partagée.</p></br>
+      <br><p><b>Le Nexus Lumineux : La Voix de l’Unité</b> Le Nexus Lumineux est une entité collective où chaque Shal’Kari projette ses idées et souvenirs. Il ne s’agit pas d’un leader, mais plutôt d’un réseau mental où toutes les décisions sont prises par consensus pur. Ce mode de fonctionnement élimine la corruption et le pouvoir individuel, mais rend leurs décisions parfois lentes et méditatives.</p></br>
+      <br><p><b>Les Gardiens de l’Aube : Les Veilleurs</b> Bien que pacifistes, les Shal’Kari ont une caste de protecteurs chargés de préserver l’équilibre énergétique de l’univers : les Gardiens de l’Aube. Ils sont les seuls capables de manipuler l’énergie brute sous forme d’armes. Ils ne combattent que si un sanctuaire stellaire est menacé. Ils se déplacent en harmonisant leurs fréquences lumineuses, créant des champs d’énergie impénétrables. La couleur de leur énergie et leur puissance dépend grandement de leurs émotions. Les deux sont souvent indissociables.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Iweltek :</b> Collaboration scientifique respectueuse, partageant une curiosité commune pour les mystères de l’univers.</p></br>
+                <br><p><b>Avec les Zorok :</b> Méfiance extrême, car les Shal’Kari considèrent le matérialisme des Zorok comme une menace pour l’équilibre cosmique.</p></br>
+                <br><p><b>Avec les Thra’Kyl :</b> Respect mutuel, les deux espèces partageant un rôle de protecteurs de l’environnement et des écosystèmes planétaires.</p></br>
+                <br><p><b>Avec les Zel :</b> Relations très tendues, car les Shal’Kari rejettent toute forme de domination théocratique, tandis que les Zel perçoivent leurs capacités énergétiques comme une hérésie.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Projection Luminescente :</b> Ils peuvent concentrer l'énergie dans leurs cristaux corporels pour émettre des rayons de lumière capables d'éblouir ou même de désintégrer la matière.</p></br>
+                <br><p><b>Altération Émotionnelle :</b> Leurs pulsations lumineuses influencent l'état émotionnel des êtres autour d'eux, apaisant les conflits ou semant la panique.</p></br>
+                <br><p><b>Corps Éthéré :</b> Leur composition semi-éthérée les rend très résistants aux attaques physiques, la plupart des projectiles passant à travers eux.</p></br>
+                <br><p><b>Absorption d'Énergie :</b> Ils peuvent puiser dans les sources d'énergie environnantes pour se régénérer ou amplifier temporairement leur puissance.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Karethil</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Lumestra</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : communautaire</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 3000 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 80%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 80%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 30%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="vorzyth" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360585450045046965/image.png?ex=67fba771&is=67fa55f1&hm=5b85a72fd47647ecf0967c08d415669e0a3ac338dac1eedf296488fa4853ee6f&=&format=webp&quality=lossless');--annexe_nc:#d370cb;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Abysse<br>Contrôle</div>
+              <div>Les Vor’Zyth</div>
+          </div>
+          <br>
+          <p>Les Vor’Zyth sont une race aquatique, évoluée dans les profondeurs abyssales, mais capable de survivre en milieu terrestre grâce à une combinaison bio-organique secrétée par leur propre peau. Leur apparence évoque des méduses humanoïdes massives, avec des tentacules phosphorescents flottant dans leur dos et des appendices sensoriels souples en guise de cheveux, capables de détecter les émotions et les pensées superficielles. Ils n’utilisent pas de langage parlé, préférant une communication psychique subtile basée sur les émotions, les vibrations sonores et la manipulation des rêves. Leur société est strictement hiérarchisée, dominée par une caste d’êtres dotés d’une voix hypnotique, capables de contrôler les esprits par des chants vibratoires. Les Vor’Zyth sont mystiques, manipulateurs et insondables, préférant diriger par l’influence plutôt que par la force brute.</p>
+          </br>
+
+          <h2>Culture et mode de vie</h2>
+          <p>Leurs temples sous-marins sont des structures organiques vibrantes, diffusant en continu des chants hypnotiques qui résonnent à travers les fonds marins. Les étrangers qui s’en approchent sont souvent pris dans une transe, incapables de résister à leur influence. Les Vor’Zyth ne combattent pas directement, mais façonnent les esprits jusqu’à ce que leurs ennemis deviennent leurs esclaves volontaires. Ils influencent les rêves et les pensées, poussant leurs proies à agir selon leur volonté. Ils sont presque impossibles à vaincre par la force brute, car ils préfèrent contrôler l’ennemi de l’intérieur. Ils cultivent un empire de l’ombre, façonnant les conflits sans que personne ne réalise leur influence réelle. Les Vor’Zyth n’ont pas besoin de conquérir des territoires, car leurs adversaires finissent par leur offrir leurs mondes d’eux-mêmes. Fort heureusement ils sont naturellement distants avec les autres espèces. Les Vor’Zyth ne portent pas de vêtements. À la place, leur peau bio-organique projette des motifs luminescents qui indiquent leur humeur, leur statut social ou leurs intentions :</p>
+          <br><p><b>• Bleu pâle :</b> Sérénité, neutralité</p></br>
+          <br><p><b>• Rouge profond :</b> Hostilité, manipulation</p></br>
+          <br><p><b>• Doré pulsant :</b> Supériorité, caste dirigeante</p></br>
+          <br><p><b>• Vert émeraude :</b> Communication ouverte, échange d’idées</p></br>
+          <br><p><b>• Noir scintillant :</b> Discrétion, pensée stratégique</p></br>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>La Fugue Silencieuse (Thalar'Unis) :</b> Lors des périodes de forte instabilité mentale (changements cosmiques, guerres, dissidence), les Chanteurs d’Abysse se réunissent dans une crypte sous-marine scellée, sans lumière, sans son extérieur. Pendant sept jours, ils s’immergent dans une méditation polyphonique, où seuls leurs chants vibrent dans l’eau. Ils cherchent à fusionner leurs voix en un seul ton parfait, la Fugue Primordiale, censée réaligner l’ensemble de la race Vor’Zyth. Ce chant est interdit d’écoute pour les non-initiés : on dit qu’il peut rendre fou ou entraîner un coma éveillé.</p></br>
+      <br><p><b>Le Miroir des Profondeurs (Zhyrr-Va) :</b> Les Vor’Zyth qui doutent de leur fonction ou de leur rôle plongent dans une faille abyssale luminescente, où des champs électromagnétiques altèrent les ondes mentales. Ils y rencontrent une projection de leur propre conscience, souvent incarnée sous la forme d’un être onirique. Le dialogue mental qui en découle est gravé dans un cristal liquide personnel, et rejoint les archives Abyssales si le sujet en revient purifié. Certains ne remontent jamais, perdus dans leur propre esprit.</p></br>
+      <br><p><b>Le Chant du Vide Mémoriel (Na'Kor-Vel) :</b>  Parfois, les souvenirs deviennent trop lourds, corrompus ou stratégiquement dangereux. Dans ce cas, les Abyssaux exécutent le Na’Kor-Vel : un chant ciblé d’effacement. Le sujet est plongé dans une capsule neuro-liquidienne, tandis que les Abyssaux entonnent un motif dissonant. Le souvenir est aspiré dans un cristal, et retiré de l’esprit du sujet. Certains Vor’Zyth choisissent de vivre sans souvenir personnel, n’existant que comme instruments de volonté collective.</p></br>
+      <br><p><b>La Communion des Reflets (Aeyl-Vorr) :</b> Quand deux êtres désirent partager leur essence — pour créer une alliance, transmettre une vision ou même s’unir spirituellement — ils pratiquent l’Aeyl-Vorr. Leurs tentacules sensoriels s’enlacent dans une symétrie parfaite, leurs couleurs s’harmonisent. Ils s’immergent dans une nacelle de mémoire liquide, où ils échangent souvenirs, peurs, savoirs et sensations. Ce rite est irréversible : après l’union, une partie de l’un demeure toujours dans l’autre.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>La société des Vor’Zyth est basée sur la domination mentale et la hiérarchie des capacités psychiques. Ceux qui possèdent les chants les plus puissants règnent sur les autres, façonnant les pensées et les rêves comme des sculpteurs de l’inconscient collectif.</p></br>
+      <br><p><b>Les Chanteurs d’Abysse : Maîtres de l’Hypnose Collective</b> Cette caste dirigeante est composée des Vor’Zyth les plus puissants psychiquement. Ils utilisent leurs voix pour influencer les masses, modulant des fréquences capables de plonger leurs cibles dans une transe profonde, d’effacer des souvenirs ou d’implanter des idées nouvelles. Un seul Chanteur d’Abysse peut contrôler l’esprit de dizaines d’individus en ajustant ses vibrations sonores. Leur pouvoir est absolu, et ils ne tolèrent aucune rébellion. Lorsqu’ils chantent à l’unisson, ils peuvent modifier l’état émotionnel d’une population entière, transformant une foule en secte dévouée. </p></br>
+      <br><p><b>Les Abyssaux : Gardiens du Savoir et de la Mémoire</b> Les Abyssaux sont les archivistes psychiques des Vor’Zyth. Ils stockent des souvenirs, des pensées et des rêves dans des cristaux liquides, formant une immense bibliothèque mentale. Ils conservent l’histoire de leur race et les connaissances acquises par les générations précédentes. Chaque Abyssal peut extraire un souvenir d’un individu et le conserver à jamais, empêchant ainsi certains secrets d’être oubliés. Ils servent de conseillers aux Chanteurs d’Abysse, leur fournissant des informations sur les ennemis ou les menaces potentielles.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Alwas :</b> Rivalité ancestrale pour la domination des océans. Les Alwas, guerriers et fiers, considèrent les méthodes insidieuses des Vor’Zyth comme une trahison des lois de la nature. Les batailles sous-marines entre ces deux peuples sont d’une rare brutalité.</p></br>
+                <br><p><b>Avec les Iweltek :</b> Fascination mutuelle. Les Vor’Zyth voient en eux des esprits brillants, capables de comprendre l’influence des fréquences psychiques.</p></br>
+                <br><p><b>Avec les Us'aid :</b> Peu de contact. Les Us’aid, instinctifs et magiques, échappent à la logique mentale des Vor’Zyth, rendant toute tentative de manipulation inefficace et frustrante.</p></br>
+                <br><p><b>Avec les Zel :</b> Les Vor’Zyth sont une menace pour les Zel, car leur pouvoir mental remet en question la foi imposée par l’Empereur-Dieu. Les Zel tentent de purifier les colonies Vor’Zyth par des croisades impitoyables.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Perception Émotionnelle :</b> Leurs appendices sensoriels détectent les émotions et les pensées superficielles, leur permettant d’anticiper les actions d'autrui.</p></br>
+                <br><p><b>Manipulation Neuro-Électrique :</b> En entrant en contact physique avec une cible, ils peuvent perturber son système nerveux, causant paralysie ou confusion.</p></br>
+                <br><p><b>Adaptation Amphibie :</b> Ils alternent sans effort entre les environnements aquatiques et terrestres, sécrétant une substance protectrice qui filtre les toxines et régule leur température.</p></br>
+                <br><p><b>Bio-Phosphorescence :</b> Ils modifient la couleur et l'intensité de leur lueur pour communiquer, se camoufler dans les eaux profondes ou désorienter leurs ennemis.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Vorzathi</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Thal’Zyr</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Conscience Collective</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 400 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 60%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 50%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="kaelyriens" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360585954540130454/image.png?ex=67fba7ea&is=67fa566a&hm=5d473df0f5bf250aa006728c3bc344a34f10aca5c06f9f8210e7ba64636b858f&=&format=webp&quality=lossless');--annexe_nc:#405975;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Forgerons<br>Stellaire</div>
+              <div>Les Kaelyriens</div>
+          </div>
+          <br>
+          <p>Les Kaelyriens sont une race unique, née de la fusion entre le métal organique et l’énergie stellaire. Leur peau, souple et irisée, ressemble à de l’acier liquide, capable de se reconfigurer en filaments pour manipuler des objets ou en lames tranchantes pour le combat. Leur existence même est un art, chaque individu cherchant sa “forme parfaite”, un état où corps et fonction ne font plus qu’un. Contrairement aux autres espèces, les Kaelyriens ne naissent pas de manière biologique. Ils émergent des Forges Vivantes, des structures biomécaniques reliées directement à une étoile, où le métal et l’énergie fusionnent pour donner naissance à de nouveaux êtres. Leur civilisation est un équilibre entre technologie, spiritualité et évolution personnelle, où chaque modification corporelle est une quête de perfection et où le métal vit et respire comme une extension de leur conscience. Les Kaelyriens n’ont pas d’ambition de conquête, mais ils suscitent la fascination et la peur. Ils incarnent une forme d’immortalité en constante évolution, et leur maîtrise de la matière vivante les rend insaisissables.
+
+            Ils sont les artistes de la perfection, les forgerons de leur propre existence. Pour eux, la stagnation est une mort lente, et la transformation est la seule véritable liberté.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Les Kaelyriens ne construisent pas leurs cités, ils les façonnent. Mekal’Thar, leur planète d’origine, est une extension de leur conscience collective, changeant et s’adaptant en fonction de leurs besoins. Les bâtiments se reforment en permanence, prenant des formes nouvelles selon les flux d’énergie et les décisions des Artisans de Chair-Métal. Rien n’est figé chez eux, car tout est améliorable. Les Kaelyriens ne portent pas de vêtements, leur métal organique s’adaptant à leurs besoins. Cependant, leur peau peut afficher des motifs gravés ou luminescents, reflétant leur statut et leurs réalisations personnelles.</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Les Marques de Perfection :</b> Chaque Kaelyrien arbore des gravures lumineuses sur son corps, représentant les épreuves qu’il a surmontées. Ces marques ne sont pas statiques, elles changent et évoluent à mesure que l’individu progresse vers sa forme idéale.</p></br>
+      <br><p><b>• Motifs fluides et courbes :</b> Symbole de transformation et d’adaptabilité.</p></br>
+          <br><p><b>• Lignes angulaires et tranchantes :</b> Preuve d’un guerrier perfectionnant son corps en tant qu’arme.</p></br>
+          <br><p><b>• Symboles complexes et imbriqués :</b> Représentent un artisan ou un chercheur maîtrisant des savoirs avancés.</p></br>
+      <br><p><b>Les Rituels de Métamorphose :</b> Chez les Kaelyriens, chaque transformation est un acte sacré. Un individu cherchant à modifier son corps doit passer par un rituel guidé par un Artisan de Chair-Métal. Le rituel commence par une fusion avec le cœur métallique de Mekal’Thar, absorbant une partie de son énergie. Le Kaelyrien doit ensuite méditer sur sa prochaine forme, définissant avec précision les nouvelles capacités qu’il veut acquérir. L’Artisan de Chair-Métal façonne la nouvelle structure du corps, fusionnant l’ancien et le nouveau dans un processus où la douleur est considérée comme une preuve de croissance.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>La société Kaelyrienne ne fonctionne pas sur une hiérarchie rigide, mais sur le principe du perfectionnement personnel. Chaque Kaelyrien doit évoluer en fonction de sa propre destinée, trouvant l’équilibre entre forme, fonction et esprit.</p></br>
+      <br><p><b>Le Haut-Forgeron : Le Guide de la Métamorphose</b> Le Haut-Forgeron est le leader spirituel, scientifique et technologique des Kaelyriens. Il façonne les futurs corps, guide les jeunes dans leur transformation et veille à ce que leur évolution ne soit pas corrompue par des influences extérieures. Il ne règne pas, il oriente. Son rôle est d’aider chaque individu à atteindre sa forme idéale. Il est le seul à pouvoir modifier les Forges Vivantes, assurant ainsi l’équilibre du cycle de naissance des Kaelyriens. Certains Hauts-Forgerons ont existé pendant des millénaires, leur métal se renouvelant constamment grâce à leur lien avec l’énergie stellaire.</p></br>
+      <br><p><b>Les Artisans de Chair-Métal : Modeleurs de l’Existence</b> Les Artisans de Chair-Métal sont les scientifiques et artistes de la société Kaelyrienne. Ils sculptent les corps de leurs congénères, aidant chaque individu à perfectionner sa structure pour atteindre son plein potentiel. Ils sont capables de fusionner de nouveaux éléments métalliques avec le corps d’un Kaelyrien, lui permettant d’évoluer sans jamais perdre sa conscience. Chaque modification est un rituel, impliquant des chants métalliques et des fusions d’énergie. Ils collaborent avec le Haut-Forgeron pour concevoir de nouvelles formes adaptées aux défis futurs.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Xeds :</b> Alliance naturelle. En tant qu’êtres mécaniques avancés, les Xeds voient en eux des cousins évolués, partageant un même respect pour la perfection technologique. Ils échangent leurs connaissances et collaborent sur des projets d’ingénierie avancée.</p></br>
+                <br><p><b>Avec les Hédrakans :</b> Collaboration économique. Les Kaelyriens fournissent des matériaux uniques et des structures biométalliques vivantes, tandis que les Hédrakans leur offrent des ressources précieuses et des circuits commerciaux.</p></br>
+                <br><p><b>Avec les Zorok :</b> Concurrence technologique. Les Zorok, experts en ingénierie avancée, voient les Kaelyriens comme des rivaux, et des tensions éclatent régulièrement sur le contrôle des technologies avancées.</p></br>
+                <br><p><b>Avec les Vrun :</b> Hostilité ouverte. Les Vrun voient les Kaelyriens comme des armes parfaites et tentent de les capturer et de les remodeler en soldats d’élite. De nombreuses attaques ont déjà eu lieu contre Mekal’Thar, mais aucune n’a encore abouti.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Morphologie Adaptative :</b> Leurs corps peuvent se reconfigurer à volonté — bras se scindant en filaments, membres devenant des lames ou boucliers.</p></br>
+                <br><p><b>Synthèse Énergétique :</b> Alimentés par l'énergie d'une étoile, ils n'ont pas besoin de se nourrir. Ils absorbent et redirigent cette énergie pour alimenter leurs attaques.</p></br>
+                <br><p><b>Fusion Technologique :</b> Ils interagissent instinctivement avec la technologie, fusionnant temporairement avec les machines pour en prendre le contrôle ou améliorer leurs performances.</p></br>
+                <br><p><b>Régénération Métallique :</b> Leurs tissus métalliques se réparent automatiquement lorsqu'ils sont exposés à une source de chaleur intense.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Kael’reen</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Mekal’Thar</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Perfectionniste</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 4000 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 70%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 50%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="lithrith" style="--bg_annexe:url('https://cdn.discordapp.com/attachments/1018824778641051658/1360589948948058152/image.png?ex=67fbaba2&is=67fa5a22&hm=81a346b529f80efc0ca1c4ea7f57a46208bf527c5bcd1801ecad3019a5842fc1&=&format=webp&quality=lossless');--annexe_nc:#02fc62;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Nature<br>Sauvegarde</div>
+              <div>Les Lithr’ith</div>
+          </div>
+          <br>
+          <p>Les Lithr’ith sont une race végétale, façonnée par la nature et fusionnée avec l’énergie du vivant. Leurs corps, composés de bois souple, de lianes et de veines bioluminescentes, évoluent lentement pour s’adapter à leur environnement. Leur visage est en perpétuel changement, reflétant leurs émotions et leur état d’esprit à travers des motifs d’écorce mouvants et des jeux de lumière. Ils ne conçoivent pas de villes ni de technologies avancées, préférant s’intégrer à leur habitat naturel. Leur existence repose sur une symbiose totale avec leur monde, où chaque Lithr’ith est une extension de la forêt elle-même. Le temps ne les presse pas, car ils le perçoivent comme un cycle sans fin, et chaque décision peut prendre des décennies à être mûrie. Les Lithr’ith sont les derniers protecteurs d’une planète où la nature n’a jamais été souillée. Ils refusent toute industrialisation, et considèrent que l’univers n’a pas besoin d’être conquis, mais compris. Ils vivent lentement, mais pensent en millénaires, ce qui les rend difficiles à comprendre pour les espèces plus pressées. Ils n’ont ni roi ni gouvernement, mais un lien télépathique et biologique qui les maintient unis. Ils n’attaquent que si l’équilibre est menacé, mais lorsqu’ils le font, la nature entière se lève avec eux. Enracinés dans l’immensité de Sylvara, ils sont les témoins du passage du temps, et leur seul but est de préserver ce qui doit l’être, quel qu’en soit le prix.</p>
+          </br>
+          <h2>Culture et mode de vie</h2>
+          <p>Les Lithr’ith ne se pressent jamais. Ils considèrent le temps comme un océan infini, où chaque action doit suivre le rythme de la nature. Ils ne prennent jamais une décision sans y réfléchir pendant des cycles entiers, ce qui peut frustrer d’autres espèces plus rapides. Leur mode de communication est basé sur les senteurs et la bioluminescence, ce qui rend leurs conversations difficiles à comprendre pour les étrangers. Ils ne construisent pas, ils façonnent, utilisant leurs pouvoirs pour faire grandir la nature selon leurs besoins plutôt que de la détruire. Les Lithr’ith n’ont pas de vêtements, mais leur corps change selon leur humeur et leur environnement. Leur écorce peut devenir plus rugueuse ou plus lisse, leurs lianes se rétracter ou s’étendre, et leur bioluminescence changer de couleur pour exprimer leurs pensées. Leur communication est un mélange complexe de signaux visuels, de vibrations et d’odeurs. Les changements de couleur dans leur bioluminescence expriment leurs émotions. Les parfums floraux qu’ils dégagent sont porteurs de messages subtils. Le bruissement de leurs feuilles et l’entrelacement de leurs lianes servent à transmettre des idées complexes.</p>
+
+      <h2>Les Rites et Traditions</h2>
+      <br><p><b>Les Cérémonies de Renouveau :</b> Chaque changement de cycle naturel est célébré par des rituels où les Lithr’ith chantent à travers leurs feuillages, produisant une musique harmonique qui résonne dans la forêt entière. Lorsqu’un Lithr’ith atteint un âge avancé, il ne meurt pas, mais se fond lentement dans la terre, devenant un nouvel arbre ou une partie du Cœur d’Ivryn. Le changement de forme est une étape sacrée, et les Lithr’ith considèrent que forcer une évolution est un crime contre la nature.</p></br>
+
+      <h2>Organisation de la société</h2>
+      <br><p>Les Lithr’ith ne vivent pas en société au sens traditionnel. Plutôt qu’une hiérarchie, ils fonctionnent comme un réseau vivant, chaque individu étant un fragment de l’écosystème global de Sylvara.</p></br>
+      <br><p><b>Le Cœur d’Ivryn : L’Ancien Végétal et la Conscience Collective</b> Au centre de Sylvara se dresse le Cœur d’Ivryn, un arbre ancestral colossal, considéré comme le cœur vivant de leur peuple. Il sert de centre nerveux à la conscience collective des Lithr’ith. Ses racines parcourent tout le globe, transmettant des impulsions énergétiques qui relient tous les Lithr’ith dans une forme de télépathie végétale. Il guide leur développement, influençant leur croissance et leur perception du monde. Les Lithr’ith les plus anciens fusionnent avec lui à la fin de leur cycle, devenant une part intégrante de la mémoire collective.</p></br>
+      <br><p><b>Les Planeswalkers : Émissaires et Gardiens du Vivant :</b> Les Planeswalkers sont les seuls Lithr’ith à quitter Sylvara. Choisis par le Cœur d’Ivryn, ils sont les ambassadeurs et les protecteurs de leur espèce, envoyés dans l’espace pour veiller sur l’équilibre naturel et prévenir les menaces extérieures, protéger la nature, les forêts et la faune de l'univers. Ils portent une partie du Cœur d’Ivryn en eux, ce qui leur permet de rester connectés à leur peuple malgré la distance. Leur forme est plus adaptable que celle des autres Lithr’ith, leur permettant de survivre dans des environnements étrangers.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Us’aid :</b> Une alliance naturelle, basée sur le respect profond de la nature. Ils voient en eux des frères d’âme, partageant leur amour pour l’équilibre et la magie naturelle.</p></br>
+                <br><p><b>Avec les Iweltek :</b> Une méfiance instinctive. Les Lithr’ith considèrent l’approche scientifique des Iweltek comme froide et intrusive, ne comprenant pas leur volonté de disséquer et d’analyser ce qui devrait simplement être vécu.</p></br>
+                <br><p><b>Avec les Bruzas :</b> Une connexion spirituelle forte. Comme les Lithr’ith, les Bruzas sont liés aux éléments primordiaux, et leur sagesse minérale complète celle du monde végétal.</p></br>
+                <br><p><b>Avec les Hedrakans :</b> Relations tendues. Les Lithr’ith considèrent leur obsession pour le commerce et l’exploitation des ressources comme un danger pour l’équilibre naturel.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Manipulation Végétale :</b> Ils contrôlent la croissance des plantes, créant des lianes, des racines et des barrières naturelles en quelques secondes.</p></br>
+                <br><p><b>Adaptation Morphologique :</b> Leur corps change en fonction du climat — plus robuste dans le froid, plus souple dans la chaleur — pour maximiser leur survie.</p></br>
+                <br><p><b>Énergie Bioluminescente :</b> Les veines lumineuses qui parcourent leur corps diffusent une énergie curative, accélérant la régénération des tissus chez eux et les êtres vivants qu'ils touchent.</p></br>
+                <br><p><b>Symbiose Écologique :</b> Ils peuvent absorber les nutriments et l'énergie du sol et des plantes environnantes, tout en aidant ces derniers à prospérer.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Litharaan</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Sylvara</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Protectrice</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 800 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 40%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 90%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 30%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annexe_nc" id="fylaris" style="--bg_annexe:url('https://media.discordapp.net/attachments/1018824778641051658/1360586784714522675/0a975bd5ad252c7df7fa158e3a2ca7a0.jpg?ex=67fba8af&is=67fa572f&hm=e34f6a75e3ff4c6d879f480d0dc94f5933a06c173a76015d6152cf10d1dcfc60&=&format=webp');--annexe_nc:#993251;">
+          <div class="annexe_illu">
+              <div></div>
+              <div>Féodal<br>Fier</div>
+              <div>Les Fylaris</div>
+          </div>
+          <br>
+          <p> Les Fylaris sont une race d'aliens de petite à moyenne taille (environ 80 cm à 1,20 m), avec un corps recouvert d'une épaisse fourrure soyeuse aux teintes variées (marron, roux, gris, crème), qui change légèrement selon les saisons pour mieux se fondre dans leur environnement. Leurs traits évoquent un mélange entre des mammifères terriens tels que les renards, les belettes et les félins. Ils se tiennent souvent sur leurs pattes arrière pour interagir avec leur environnement, mais peuvent basculer sur quatre pattes pour une mobilité accrue. Les Fylaris sont dotés d’une intelligence vive, d'une capacité d'élocution fluide et d'un sens de la communauté profondément ancré dans leur culture féodale. Chaque membre de leur société considère que sa place dans la hiérarchie est un honneur et une responsabilité sacrée.</p>
+          </br>
+          <h2>🦊Culture et mode de vie🦊</h2>
+          <p>Les Fylaris possèdent une physiologie adaptée à un mode de vie à la fois terrestre et arboricole. Leur fourrure, en plus d’être thermorégulatrice, est légèrement hydrophobe, leur permettant de résister à l’humidité des forêts denses de Shyv'Kora. Leurs griffes rétractiles sont idéales pour grimper aux arbres et leur vision nocturne est particulièrement développée, adaptée aux lueurs bioluminescentes de leur planète natale. Ils possèdent un système nerveux très réactif, leur offrant des réflexes exceptionnels. Certains Fylaris développent une sensibilité aux cristaux luminescents de leur planète, leur permettant de ressentir les fluctuations énergétiques environnantes, un phénomène vu comme un "don céleste".</p>
+          <br><p><b>Le Code de l’Honneur Fylaris :</b> Les Fylaris vivent selon un code de loyauté et d’honneur strict. Briser un serment est considéré comme l’un des crimes les plus graves. Chaque individu doit respecter son rôle et veiller à l’harmonie de son clan.</p></br>
+          <br><p><b>L’Ascension et la Destinée :</b> Les Fylaris croient que chaque individu suit un chemin tracé par les étoiles, mais que le travail et la dévotion peuvent permettre d’élever son destin. Il est possible pour un serf exceptionnel de devenir un guerrier, et pour un guerrier de monter dans la noblesse s’il prouve sa valeur.</p></br>
+          <br><p><b>L’Architecture :</b> Les Fylaris construisent des cités perchées dans les arbres massifs de leur planète, reliées par des passerelles en bois renforcé et éclairées par des lanternes à cristaux luminescents. Ces structures sont conçues pour être à la fois esthétiques et discrètes, leur permettant d’éviter les prédateurs naturels.</p></br>
+          <br><p><b>Tactiques de guérilla :</b> Agiles et furtifs, les Fylaris excellent dans les embuscades et la guerre d’ombre.</p></br>
+          <br><p><b>Armes traditionnelles :</b> Lames courbes, arcs pulsars et griffes métalliques rétractiles.</p></br>
+          <br><p><b>Montures de combat :</b> Certains clans élèvent des créatures rapides et robustes pour se déplacer en terrain difficile.</p></br>
+
+      <h2>🐯Les Rites et Traditions🐯</h2>
+      <br><p><b>Le Rite des Étoiles :</b> Lorsqu’un jeune Fylaris atteint l’âge adulte, il entreprend une quête initiatique en solitaire. Son succès détermine son rôle futur dans la société.</p></br>
+      <br><p><b>Le Grand Alignement :</b> Tous les 20 ans, les Fylaris célèbrent l’alignement des lunes de Shyv’Kora avec des feux rituels et des joutes entre clans.</p></br>
+      <br><p><b>Les Funérailles Astrales :</b> Les Fylaris brûlent leurs défunts sur des bûchers entourés de cristaux luminescents, croyant que leurs âmes rejoignent les cieux.</p></br>
+
+      <h2>🦁Organisation de la société🦁</h2>
+      <br><p>Leur société fonctionne selon un système féodal strict, structuré comme suit :</p></br>
+      <br><p><b>Le Souverain Meowtoile (Roi/Reine) :</b> Le monarque règne sur l’ensemble des Fylaris avec un pouvoir absolu. Considéré comme le "Messager des Cieux", il ou elle est vu(e) comme choisi(e) par les étoiles pour maintenir l’harmonie et la prospérité. Le trône n’est pas nécessairement héréditaire : des signes cosmiques (éclipses, comètes, alignements stellaires) déterminent souvent le prochain souverain.</p></br>
+      <br><p><b>Les Hauts-Lords (Nobles) :</b> Les seigneurs régionaux possèdent des domaines appelés "Clans-Territoires". Chaque Haut-Lord doit prêter serment d’allégeance au Souverain Astral et gérer ses terres tout en offrant protection et justice à ses sujets.</p></br>
+      <br><p><b>Les Gardes de Meowlune (Chevaliers) :</b>  Ces guerriers d'élite sont les défenseurs de la couronne. Portant des armures légères mais robustes, ils sont entraînés à se déplacer avec agilité tout en maniant de petites lames énergétiques et des arcs pulsars à courte portée.</p></br>
+      <br><p><b>Les Meowrtisans et Meowrchands :</b>  Ils fabriquent tout ce dont la société a besoin — armes, outils, textiles et objets d'art. Les marchands voyagent au-delà de leur planète pour commercer avec d'autres races, bien que les Fylaris restent généralement méfiants envers les étrangers.</p></br>
+      <br><p><b>Les Meowserfs (Paysans et Ouvriers) :</b>  Ils représentent la majorité de la population. Bien que modestes, les serfs sont respectés pour leur travail, essentiel à la survie de tous. Chaque famille arbore fièrement les couleurs de son Haut-Lord.</p></br>
+      <h2>😾Les Clans et leur Structure😾</h2>
+      <br><p>Chaque Haut-Lord règne sur un Clan-Territoire, une région définie par des frontières naturelles (forêts, rivières, montagnes). Ces clans fonctionnent comme des mini-royaumes avec leurs propres traditions et insignes.</p></br>
+      <br><p><b>Clans du Meowstral :</b> Habitués aux montagnes glacées, ils sont plus robustes et se spécialisent dans l’exploitation des cristaux luminescents.</p></br>
+      <br><p><b>Clans du Meowlieu :</b> Installés dans les forêts denses, ils sont les plus nombreux et constituent le cœur politique des Fylaris.</p></br>
+      <br><p><b>Clans du Meowale :</b> Situés près des rivières et marais, ce sont des navigateurs et pêcheurs habiles.</p></br>
+      <br><p>Chaque clan possède sa propre "Marque Totémique", un emblème porté fièrement sur les armures et vêtements.</p></br>
+          </div>
+      <div class="race-bloc">
+          <div class="relation-capacite-container">
+            <div class="relation-section toggle-box">
+              <h4 class="toggle-header">Relations</h4>
+              <div class="toggle-content">
+                <br><p><b>Avec les Us’aid :</b> Relations neutres, mais respect mutuel, car les deux races partagent un lien profond avec la nature.</p></br>
+                <br><p><b>Avec les Xeds :</b> Relation distante, les Fylaris considérant les androïdes comme dénués d’âme et d’émotions véritables.</p></br>
+                <br><p><b>Avec les Zorok :</b> Ennemis déclarés, les Fylaris ayant souvent dû combattre ces reptiles technologiquement avancés pour protéger leurs ressources naturelles.</p></br>
+                <br><p><b>Avec les Hedrakans :</b> Alliés commerciaux, bien que les Fylaris restent méfiants face à leurs méthodes marchandes trop pragmatiques.</p></br>
+                <br><p><b>Avec les Vrun :</b> Perçus comme une menace impérialiste, les Fylaris redoutent une invasion de leur monde.</p></br>
+              </div>
+            </div>
+            <div class="capacite-section toggle-box">
+              <h4 class="toggle-header">Capacités</h4>
+              <div class="toggle-content">
+                <br><p><b>Agilité et Vitesse :</b> Les Fylaris sont capables de se déplacer avec une agilité surprenante, bondissant avec précision d’arbre en arbre. Leur petite taille et leur souplesse leur permettent d’échapper à des adversaires bien plus grands.</p></br>
+                <br><p><b>Olfaction Avancée :</b> Leur sens de l’odorat est extrêmement développé, capable de détecter les émotions et les intentions des autres races par les phéromones, ce qui en fait d'excellents négociateurs et diplomates.</p></br>
+                <br><p><b>Communication Animale :</b> Les Fylaris ont une affinité naturelle avec les créatures de leur planète. Grâce à des vocalisations spécifiques et à des phéromones subtiles, ils peuvent calmer ou même influencer la faune locale pour se défendre ou pour effectuer des tâches simples.</p></br>
+                <br><p><b>Camouflage Naturel :</b> Leur fourrure peut légèrement modifier sa teinte pour se fondre dans les environnements naturels, similaire aux caméléons, mais moins efficace face à la technologie avancée.</p></br>
+                <br><p><b>Sagesse des Étoiles :</b> Les Fylaris croient fermement que les étoiles leur envoient des visions et des présages. Certains d'entre eux, appelés "Oracles Stellaires", sont capables de percevoir des bribes d’événements futurs dans leurs rêves.</p></br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="race-bloc">
+          <div class="culture-container">
+            <div class="dots-section">
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Langue : Fy’len</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Planète d'Origine : Shyv'Kora</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Société : Féodale</span>
+              </div>
+              <div class="dot-item">
+                <span class="dot"></span>
+                <span class="dot-text">Espérance de Vie : 70 ans</span>
+              </div>
+            </div>
+            <div class="bar-section">
+              <div class="bar-label">Niveau de Vie</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 70%;"></div>
+              </div>
+        
+              <div class="bar-label">Spiritualité</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 60%;"></div>
+              </div>
+        
+              <div class="bar-label">Force militaire</div>
+              <div class="bar-background">
+                <div class="bar-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------------->
+            </div>
+            <!--------------- liens de navigation ----------------->
+            <div class="navigation_links">
+                <div>
+                    <button id="toggleBtn">
+                        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                          <rect x="0.5" y="0.5" width="69" height="69" rx="9.5" fill="#1E1E1E" stroke="#BB78C5"/>
+                          <line class="line_top" x1="17" y1="47.5" x2="53" y2="47.5" stroke="#BB78C5" stroke-width="3"/>
+                          <line class="line_mid" x1="17" y1="33.5" x2="53" y2="33.5" stroke="#BB78C5" stroke-width="3"/>
+                          <line class="line_bot" x1="17" y1="19.5" x2="53" y2="19.5" stroke="#BB78C5" stroke-width="3"/>
+                        </svg>
+                    </button>                  
+                    <div class="title_annexe">Aliens</div>
+                </div>
+                <div>
+                <a href="Alien NC.html">Aliens</a>
+                <a href="Planète NC.html">Planète</a>
+                <a href="Pouvoirs NC.html">Pouvoirs</a>
+                <a href="Rôles.html">Rôles</a>
+                <a href="#">Bestiaire</a>
+                <a href="#">Religion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
